@@ -1,0 +1,1002 @@
+UNIT 8 I/O TECHNOLOGY
+Structure
+
+8.0    Introduction
+8.1    Objectives
+8.2    Mouse
+       8.2.1 Classifications of Mice
+8.3    Keyboard
+       8.3.1 Features of Keyboard
+8.4    Monitors
+       8.4.1 Cathode Ray Tube
+       8.4.2 Liquid Crystal Display
+       8.4.3 Light-Emitting diode
+8.5    Video Cards
+       8.5.1 Resolution
+       8.5.2 Color Depth
+       8.5.3 Video Memory
+       8.5.4 Refresh Rates
+       8.5.5 Graphic Accelerators
+       8.5.6 Video Card Interfaces
+8.6    Sound Cards
+8.7    Digital Camera
+       8.7.1 Webcam
+8.8    Voice Based Input Devices
+       8.8.1 Siri
+       8.8.2 Alexa
+8.9    Printers
+       8.9.1 Impact Printers
+       8.9.2 Non-impact Printers
+8.10   Scanners
+       8.10.1 Resolution
+8.11   Modems
+8.12   Summary
+8.13   Solutions /Answers
+       References
+
+
+
+
+                                                80
+                                                                                                     I/O Technology
+8.0 INTRODUCTION
+In the previous unit, you have studied the concept of input/output interfaces and I/O
+techniques. The previous unit discussed three I/O techniques i.e., programmed I/O, Interrupt-
+driven I/O and DMA were discussed along with the evolution of I/O processor. A computer
+supports a number of I/O devices in order to perform data transfer with external environment.
+This unit provides a brief introduction to the various I/O devices such as mouse, keyboard,
+monitor, printer, scanner, video & sound cards etc. It also discusses the modern voice-based
+input devices. The unit does not attempt to provide all the details of these devices, but attempts
+to introduce you the characteristics, basic functions and use of the devices in the context of the
+processor.
+
+
+8.1 OBJECTIVES
+After study of this unit, the students ought to be able to:
+ Explain the features of mouse and its classifications;
+ List the basic characteristics, functioning and interfacing requirements of keyboard;
+ Explain different types of monitors
+ Explain video Cards, sound cards, and digital camera
+ Explain different types of printers;
+ Explain the basic characteristics of Modems and scanners;
+ Explain the concept of voice-based input
+
+
+8.2 MOUSE
+Douglas C. Engelbart at Stanford Research Institute (now SRI International) proposed the
+basic concept of mouse in order to use it with computer system. Xerox Corporation is first
+organization which developed the first Mouse. It is hand-held hardware input pointing device,
+which gives user a cursor (pointing mark) on monitor screen and this cursor is used to send the
+input to computer system. The purpose of mouse is to detect two-dimensional movement
+relative to surface. Typically, mouse is available with two or three buttons but a single button
+is sufficient to control the movement of cursor. There exist different types of mice namely
+Wired, Wireless, Bluetooth, Trackball, Optical, Laser, Magic, USB etc.
+The unit of mouse resolution is Counts Per Inch (CPI) which represents the number of signals
+per inch of physical travel of mouse. The value of CPI may range from 400 to 1600. The
+mouse also sends CPI data to computer with some frequency which is known as polling rate.
+The polling rate may range from 60 Hz to 1000 Hz. The large value of CPI will result in faster
+movement of cursor which requires sending much data to computer demanding high polling
+rate. Therefore, it will be difficult to control the accuracy for large value of CPI.
+8.2.1 Classifications of Mice
+The classifications of mice are based on connectors, number of buttons and position sensing
+technologies. Two classifications are discussed-
+1.   Connectors: This category deals with categorization of computer mice based on
+     ports/physical channels which are used to connect the mouse and computers.
+     a) Bus Mouse-Bus was used to connect the first mouse with PC. Thus, it has been called
+         as the bus mouse. It was used with IBM-compatible personal computers in its early
+         days. A specialized bus interface was used to connect them with PC which was
+         implemented via an ISA add-in card.
+     b) Serial Mouse-In Serial mouse, serial port was used for connection. It is basically an
+        interface present physically on computer for communication. Bit by bit information
+        goes in and taken out of the computer through this port. It is a male port of D-type
+        having 9 pin (DB9M) which is found at the back of the motherboard. However, this
+        category of mice is no longer in use.
+     c) PS/2 Mouse-The green colored PS/2 port is used to connect the mouse. Introduced in
+        1987, PS/2 uses 6-pin mini-din connector. It is the successor of serial connectors.
+        PS/2 ports were first used in the PS/2 systems and they are still being used in modern
+        designs. Green color of PS/2 port is for mouse and purple colored is for keyboard.
+     d) USB Mouse-USB mouse are same in terms of shape and appearance but the
+        difference lies in terms of connector. They are connected to a USB port. USB stands
+                                                                                                              81
+         for universal serial bus has superseded the PS/2 ports, though some of the computers      I/O Technology
+         still have the PS/2 ports. This standard defines the cables, connectors and
+         communication protocols for connection and communication between computers and
+         attached peripheral devices. The objective of this standard was to standardize
+         computer devices connection.
+     e) Wireless Mouse-These are the modern mouse that does not require any cable for
+        connection. Eliminating the clutter of cables, it provides a neat type of mouse to use.
+        Some of its key features are- comfortable ergonomic design, improved battery life,
+        Plug-and-Play, multi-function and wide compatibility
+
+2.   Sensing Technology: There are two types of mice based on sensing technologies i.e.,
+     mechanical mouse and optical mouse.
+     a) Mechanical mouse has a rubber or metal ball in middle, which is used to control the
+         movement of cursor. The sensors inside the ball detect the rotation of ball. When the
+         ball rolls with the movement of mouse, it causes sensors to detect the rotation of ball
+         along the two axes which consequently send signals to monitor screen. Figure 8.1(a)
+         depicts the mechanical mouse.
+     b) Optical mice use light emitting diodes (LEDs), optical sensors and digital image
+         processing. The optical mouse detects by sensing the changes in the reflected light.
+         The change in reflected light is measured by analyzing the images and the cursor
+         moves on screen accordingly. Figure 8.1(b) shows the optical mouse.
+
+
+
+
+                                      (a)                                  (b)
+
+       Figure-8.1: Difference between (a) Mechanical Mouse and (b) Optical Mouse
+
+
+8.3 KEYBOARD
+A keyboard is an input device, which is used since the inception of the computer systems. The
+keyboard allows manual input of alphabets, numbers, special characters, which are available as
+keys on a board. Figure 8.2 depicts a keyboard. In general, users use a keyboard to transfer a
+meaningful sequence of characters or numbers to a computer. Thus, a keyboard can be used to
+send input data into a computer from the external world.
+
+
+
+
+          Figure-8.2: Overview of how Keyboard transfers data to the computer
+
+8.3.1 Features of Keyboard
+Some of the basic characteristics of keyboard are given as follows.
+    Keyboard Layout
+The layout defines the arrangement of the keys on the keyboard. This arrangement is mostly
+influenced by the typewriter. The keyboard layout is now available for many different
+languages of the world. A good layout is the one, which allows faster data input. Thus, in most
+cases, computer keyboard layout is identical to typewriter key layout, which was designed for
+enhancing the speed of data input. The standard keyboard layout for English is called
+QWERTY layout. QWERTY layout stands for the six top alphabets in the keyboard. The
+                                                                                                            82
+QWERY arrangement was created by Sholes, who invented typewriter. However, a computer               I/O Technology
+in addition to alphabets is required to input numbers, special characters, and several shortcut
+commands. Therefore, keyboard has a very detailed arrangement of keys.
+One popular keyboard designed by IBM for the personal computer had 101 keys. This
+keyboard's key layout is shown in Figure 8.3. This keyboard consists of key sets for alphabets
+in the middle, numeric key pad in the right for easy entry of numbers, function keys at the top
+name F1, F2, which are used as shortcut to various functions in different software, and a set of
+cursor keys to move the cursor on the screen. Later, a set of windows function keys were
+added to this design.
+Another keyboard layout was designed by A Dvorak and William Dealey in 1936. Their layout
+was primality designed for people who find typing with all fingers difficult and would like to
+type using only two fingers. It was expected that typing would be faster by using Dvorak-
+Dealey keyboard, as you can use both the hands while typing. You can find more details on
+this keyboard in the further readings. With the availability of newer mobile smart devices,
+there are many possibilities of designing new keyboards for specific areas, including better
+designed layout for regional scripts.
+For the languages of our nation, Indic keyboard layout is a standard layout. This layout
+supports 12 Indian scripts.
+
+
+
+
+                         Figure-8.3: IBM 101-key Keyboard layout
+   Keyboard Touch
+In addition to layout, the other important characteristic of a keyboard is the keyboard touch.
+The keys should be sensitive enough to capture the data being entered by the user. A good
+keyboard must be able to send data with speed. These days, in addition, to physical keyboards,
+touch screen keyboards are also available. Most of these keyboards provide features of
+predictive text and autocorrect, which facilitate data entry by the user.
+   Scan Codes
+When a key is pressed on a keyboard, it transfers the scan code relating to those keys to the
+processor. Scan code of every key is unique. The scan codes are used to communicate the
+desired data or action to the processor. A keyboard of processor is connected through interrupt
+driven I/O mechanism. Therefore, when a key or several keys are pressed together on the
+keyboard, it interrupts the processor, provided processor has enabled interrupts. The processor
+receives the scan code/codes and identifies the key or keys that were pressed using the scan
+code table stored in the ROM BIOS. In addition, the status byte that is associated with the
+keyboard informs the processor about the status of keys that are used a toggles, like, Caps lock,
+Num Lock, etc. But how does a keyboard identified that more than one keys are pressed
+together, such as CTRL & ALT & DEL. Interestingly, a keyboard sends two scan codes to the
+processor - one when key is pressed and second key is released, which were called Make and
+Break scan codes respectively. Thus, by knowing the timing of these make and break scan
+codes, processor determines, which keys are pressed together. A detailed discussion on scan
+codes is beyond the scope of this Unit.
+
+
+8.4      MONITORS
+A monitor is an output display device connected to processor and it displays the vision into the
+brain of the processor. It allows a user to graphically interact with the processor which is
+helpful to send output as well as to receive input to/from the user. Technically speaking, it is
+display device which provides a graphical vision by converting the digital/analog signals into
+the visual form.
+
+                                                                                                             83
+The monitor looks like a television set but both the devices are different with each other. The      I/O Technology
+monitors have greater sharpness, lower input lag, higher refresh rates, color purity, and operate
+at higher frequencies in comparison to TV sets. The TV set consists of tuner or demodulator
+circuit to convert the signals
+Whenever users are interested to buy a monitor, they search for the better configurations in
+minimum possible budget. The configuration of monitors consists of display size, resolution,
+supported frequencies, the size of the picture tube and the type of connector used to connect to
+the computer. Monitors are manufactured by many manufacturers like LG, Samsung, Acer,
+Dell, HP, Lenovo, Sony, Asus, BenQ, etc. The monitors are available with different sizes i.e.,
+14’’, 15’’, 17”, 19’’, 21.9’’, 24’’ or even higher. The monitors are also available with different
+screen form factor i.e., flat and curved screens. The monitors can be categorized into three
+categories based on the design technology. These categories are discussed in next sub-sections.
+
+8.4.1 Cathode Ray Tubes
+The cathode ray tubes monitors and television sets are based on the technology of Cathode ray
+tube (CRT). A CRT is a partly empty glass tube which consists of inert gas at low pressure. A
+negatively charged electrode which is known as Cathode/Electron gun is used to shoot beams
+of electrons at high speed towards a positively charged electrode (anode). The high-speed
+electrons impinge on the small phosphor coated screen. The screen consists of dots with three
+primary colors i.e., Red, Green and Blue. Indeed, there exists either one electron gun for the
+three colors (Red, Green and Blue) or one different electron gun for each color. Figure-8.4
+depicts the cathode ray tube (CRT). The quality of image on CRT screen is influenced by
+following four factors:
+1.   Phosphor coating: The monitor screen is coated with phosphor (fluorescent material)
+     which emits light when bombarded by electron gun. The phosphor coating is provided in
+     inner surface of cathode ray tube. The coating affects the color and the persistence. The
+     term persistence in the context of monitor is defined as the time for which the effect of a
+     single hit on a dot on the monitor surface lasts.
+2.   Shadow Mask/Aperture Grill: It is the manufacturing technology for CRT monitors to
+     produce clear and focused color images. It determines the resolution of the screen in color
+     monitors. In shadow mask CRT, each pixel position consists of 3 phosphor color dots one
+     for each red, green and blue. The Triad and inline arrangements are used for the alignment
+     of color dots to produce good quality images.
+     Another technology for same purpose is the aperture grille
+3.   Electron Gun: The electron gun must be efficient in its working. The high-quality
+     electron gun affects the quality/sharpness of the image.
+4.   The screen glare and lighting of the monitor are also major factors to influence the quality
+     of the image.
+
+
+
+                       Focusing System                       Electron Beam
+                                            Y deflects
+               Base
+
+
+                                                                           Phosphor coated screen
+
+
+
+                                       X deflects
+     Connector Pins
+
+               Electron Gun       Control grid voltage
+
+
+                                Figure-8.4: Cathode Ray Tube
+
+8.4.2 LIQUID CRYSTAL DISPLAYS (LCDs)
+LCDs were developed by the company RCA in the year 1960. An LCD is an electronically
+modulated optical device which employs light-modulating properties of liquid crystals
+combined with polarizers. The light is not emitted directly from the liquid crystals rather a
+
+                                                                                                              84
+reflector is used to produce images in color or monochrome. An LCD blocks the light to              I/O Technology
+display patterns. LCDs are lightweight screens and are mainly used for portable computers.
+They are known for low power consumption, good resolution and bright colors. The LCDs can
+be divided into following three categories based on display generation techniques.
+1.   Reflective LCDs: The display is generated by selectively blocking reflected light.
+2.   Backlit LCDs: The display is generated due to a light source behind LCD panel.
+3.   Edgelite LCDs: The display is generated due to a light source that is adjacent to LCD
+     panel.
+
+LCD Technology
+To manufacture the LCD screens, Nematic technology is used. The molecules of liquid
+crystals (rod-shaped crystals) which are known as Nematic cells are used. Figure 8.5 depicts
+Nematic cells. The Nematic cells are packed (sandwich) between two thin plastic membranes.
+The Nematic cells have special properties i.e., these cells can change the polarity and bend of
+the light. The electric current is used to control these properties by applying the electric on
+grooves in the plastic membranes.
+
+
+
+
+                                  Figure-8.5: Nematic Cells
+There exist two types of LCDs i.e., Passive matrix and Active matrix.
+1.   Passive Matrix- The passive matrix arrangement is most widely used technology due to
+     low weight, high image quality, low cost and high response time. LCD panel consists of a
+     grid of horizontal and vertical conductors. The conductors consist of Indium Tin Oxide to
+     create a picture. Each pixel is located at the intersection of two conductors in the grid.
+     Whenever current is passed through a pixel, it becomes dark
+2.   Active Matrix-It employs Thin Film Transistors (TFT) and that’s why known as TFT
+     technology. In active-matrix arrangement, TFTs are arranged in a matrix on a glass
+     surface and these TFTs are considered as pixels. These TFTs receives a small amount of
+     white light, which is then enhanced by TFT to activate a pixel. The advantage of using
+     TFTs is that they have faster response times, as they use smaller amount of light.
+     However, the disadvantage of using TFTs are that they are difficult to fabricate, therefore,
+     are costly. TFT LCD Display Technology is shown in the below Figure-8.6.
+
+
+
+
+                         Figure-8.6: TFT LCD Display Technology
+
+                                                                                                             85
+                                                                                                                                                           I/O Technology
+
+8.4.3 Light Emitting Diodes (LED)
+The light-emitting diode (LED) monitors display is a flat screen, flat-panel computer monitors
+or television. It uses array of LEDs as pixels for displaying the videos. It is light weight and
+has a very short depth. LCD monitors and LED monitors differ only in terms of backlighting;
+typical LCD monitors uses fluorescent backlights whereas an LED monitor uses light-emitting
+diodes. The earlier LCD monitors used CCFL instead of LEDs to illuminate the screen. LED
+monitors offer many features/benefits namely slim design, flicker-free & brighter images,
+longer lifespan, broader dimming range, low power consumption, better color and picture
+quality etc. Figure 8.7 lists the benefits of LED monitors.
+
+
+
+
+                                      Figure-8.7 Benefits offered by LED monitors
+
+Check Your Progress 1
+
+1. Explain mechanical and optical mice.
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+2. Discuss scan codes.
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+3. What are the differences between LCDs and LEDs?
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+........................................................................................................................................................
+
+
+8.5           VIDEO CARDS
+First, this section discusses a brief overview of graphic display technology with the primary
+focus on CRT monitors, before jumping to video hardware. The graphic display system is
+responsible for displaying bit-mapped graphics on monitor. Every image is formed using small
+dots which are known as picture elements or pixels. Figure 8.8 shows the pixels of an image.
+The description of each pixel is stored in the memory which is taken care by video system.
+
+                                                                                                                                                                    86
+                                                                                                   I/O Technology
+
+
+                                                              Pixels
+
+
+
+
+                          Figure-8.8 Bit-mapped Graphics Image
+
+The display memory which is used to store the data for images is known as frame buffer. At
+any moment, the frame buffer consists of data for bit-map representation of current image on
+screen and the next image. The frames are read dozens of times per second and sent to the
+monitor using a cable in serial manner. Upon receiving the stream of data, the monitor forms
+and displays it on the screen by scanning raster movement from first up to down one row at a
+time. Based on this raster movement CRT, the monitor will illuminate its small phosphor dots.
+It is shown in Figure 8.9 and Figure 8.10.
+
+
+
+
+              Frame Buffer                                             Image
+
+     Figure-8.9: Frame Buffer and the corresponding image displayed on the system
+
+The greater number of dots leads to better resolution of the image as well as the sharper the
+picture. The number of dots directly correspond to the richness of the image (or gray levels for
+a monochrome display) displayed by the system. The higher the number of colors, the more is
+the information required for each dot. Therefore, higher resolution and color depth of the
+system required bigger memory storage by the system to store the frame buffers.
+
+
+
+
+                                  Figure 8.10: Raster Display
+8.5.1 Resolution
+The resolution is defined as the possible sharpness or clarity of an image. The resolution does
+not depend upon the physical characteristics of the monitor. It is measured in terms of number
+of pixels on a monitor. For instance, a standard VGA graphic display with resolution 640×480
+consists of 640 and 480 pixels on horizontal and vertical axes respectively. In order to
+construct an image, different numbers of pixels are spread across both the axes of monitor
+screen. Higher is the resolution, sharper is the image due to large number of pixels.
+The sharpness of an image on actual live-screen does not depend only on resolution but it is
+measured in the unit of dots-per-inch. These dots-per-inch are dependent on (i) size of the
+
+                                                                                                            87
+image and (ii) resolution of the image. An image will be sharper on a smaller screen in                I/O Technology
+comparison to bigger screen. For instance, an image may appear sharp on a 15" monitor and
+may be a little jagged on a 12” monitor display. Figure 8.11 shows a circle with different
+sharpness on different size monitor screens.
+
+
+
+
+                      Figure-8.11: Circle with low and high resolutions
+
+8.5.2 Color Depth
+The image is constructed using stream of pixels. If the value of pixel is ‘ON’ and ‘OFF’, the
+pixel will be displayed in image on the screen as a pure black and white respectively. If single
+bit is assigned to a pixel, the image will be black and white. This system is known as two-
+color system. The pure black and white images can be converted to gray levels, which are
+different levels between white and black. This requires a greater number of bits to code each
+pixel. For instance-if you assign two bits to each pixel, four color levels are possible: White,
+Light Gray, Dark Gray and Black. In general, you need more than one bit to describe a pixel.
+Hence, one bit per pixel implies 2 colors or 2 gray-levels, 2 bits per pixel implies 4 colors or 4
+gray-levels, and 3 bits per pixel implies 8 colors and so on. It means n bits per pixel imply 2n
+gray-levels. For colored images color codes for the intensity of the three primary colors, viz.
+Red, Green and Blue, for each pixel are stored.
+Color Depth can be understood as the number of bits allocated to every pixel in order to store
+color code information. Since every bit of a pixel corresponds to a specific color i.e., all bits at
+the same position for all pixels corresponds to the same color. Thus, the bits corresponding to
+same color can be regarded to form a plane and these planes are known as color planes. It is
+considered the color planes are stacked on top of each other which are helpful in deciding final
+color at each pixel. Thus, depending upon number of bits required for each pixel, there are 3
+Color Planes (one each for Red, Green and Blue). Figure-8.12 depicts the 3-bits color display
+and 3 color planes.
+
+
+
+
+                    Figure-8.12: 3-bits Color Display with 3 color planes
+
+The computer system with a 3-bit RGB color planes utilized 1 bit for each of the red, green
+and blue color components. Therefore, every color component can exist only in “ON" or
+"OFF" state. The three-bit RGB ‘ON’ or ‘OFF” color components result in 8-colors consisting
+of three primary RGB colors i.e., red, green and blue; two pure colors i.e., white and black;
+and three complementary colors i.e., magenta, cyan, and yellow colors. The RGB values (ON"
+or "OFF") of 3-bits color are given in Table 1 and the colors are displayed in Figure 8.13.
+
+
+
+
+                    Figure-8.13: 8 possible colors for 3-bits Color Display
+
+                           Table-1: 3-bit Color Display RGB values
+
+                                                                                                                88
+                           Bit-values (‘ON’ or ‘OFF’)              Color                              I/O Technology
+
+                      0              0            0             Black
+                      0              0            1             Blue
+                      0              1            0             Green
+                      0              1            1             Cyan
+                      1              0            0             Red
+                      1              0            1             Magenta
+                      1              1            0             Yellow
+                      1              1            1             White
+
+What Color depths are practically used?
+If n is the color depth representing the total number of bits used to store one pixel, the number
+of colors will be 2n (2 to the power n). Table 2 puts the most popular color modes.
+
+                                  Table 2: Popular Color Depths
+               Sr. No.       Color Depth(bits/pixel)        Color Mode
+               1             1                              Monochrome
+               2             4                              16-Colours
+               3             8                              256-Colours
+               4             16                             High Color
+               5             24                             True Color
+
+Human & Color Depth of Monitor Screen
+The modern monitors can display up to a maximum of 262,144 (218) colors for 18 bits/pixel
+Color Depth. If different tones (color pitch) are allowed and eight bits are used for each RGB
+color, a total of 16.77 million colors (256 tones (R) x 256 tones (G) x 256 tones (B) =
+16,777,216 colors) can be generated. On the other hand, human eyes are capable to distinguish
+maximum few million different colors. Thus, even if the monitor screens display colors more
+than few million, they would not be distinguished by humans. It also implies that the practical
+upper limit the 24-bit per pixel color depth. Since the number of possible colors produced by
+this color depth is more than the colors that could be distinguished by human eye, these colors
+are called the true colors. However, 24-bits color or true color systems have more color than
+possibly useful; the extra 8-bits are used by designers to store special effects information of the
+image. These extra bits formed a channel which is known as Alpha channel.
+
+8.5.3 Video Memory
+The video memory/frame buffer is used to store the video to be displayed. The quality of video
+display depends on the efficiency of the video system i.e., how quickly the frames are accessed
+and updated. Initially, a fixed area of RAM is allocated to the video memory. Later, video
+RAM along with video cards was introduced and it can be increased by placing additional
+video RAM under the unified memory architecture (UMA). UMA is helpful in reducing the
+cost of computer system. In UMA supported systems, an area of main memory is used as
+frame buffer/video memory which results is elimination of bus for video processing.
+Therefore, the computer system with UMA may be less costly.
+Basically, UMA comes with on-board video card in the modern low-cost motherboards. The
+required resolution and color-depths are the deciding factor for the size of video
+memory/frame buffer. The minimum size of video memory can be calculated simply by
+multiplying the Color Depths and resolution of the monitor screen.
+Let us solve a simple exercise. Assume a standard VGA monitor screen with resolution 800 
+600 and color depth value 8.
+
+         Number of Pixels                         = 800  600=480000
+         Color Depth (8 or 23)                    = 3-bits
+         Minimum Memory required                  = 1,440,000 bits (180,000 bytes)
+                                                  = 180 KB
+
+
+                                                                                                               89
+It implies that minimum RAM required for resolution 800  600 and 8 color depth is 180 KB.           I/O Technology
+But the memory is available in exponential power of 2 and the next minimum size of memory
+is 256 KB. It implies that minimum size RAM required for resolution 800  600 and 8 color
+depth is 256 KB.
+Now-a-days, a very odd-looking resolution i.e., 1152×864 has become popular. Could you
+guess why this is so? The following are the reasons behind its popularity. There are nearly one
+million (9,95,328) pixels for VGA with 1152×864 resolution. For color depth value 8, nearly 8
+million bits or 1 MB memory is required. Further, human eyes perceive only a few million
+colors and this resolution is more suitable. In addition, a square pixel that has a ratio of 4: 3
+allows easier programming.
+Please note that the calculations shown above are not applicable for 3-D displays, which
+requires more memory due to the issues like “Double Buffering” and/or “Z-Buffering”.
+
+8.5.4 Refresh Rates
+The Video Controller (a special circuit) scans the frame buffer and reads rows one by one
+followed by sending this data in serial manner. On monitor screen, the electron beam starts
+scanning one-line at a time from left to right direction in order to create images. The horizontal
+refresh rate or horizontal frequency is the rate at which horizontal sweeps take place, while
+vertical refresh rate or vertical frequency is the rate at which vertical sweeps take place. The
+vertical frequency is also known as refresh rate or frame rate, as during a vertical sweep one
+complete frame is displayed. There exist several hundred rows in each frame and thus,
+horizontal frequency is hundreds of times higher than vertical frequency. The unit of
+horizontal frequency is KHz while the unit of vertical frequency is Hz.
+Note: It is necessary to maintain the same frequencies between the monitor and video system
+for better quality of images. The compatible refresh rates are provided with the manual of the
+monitor.
+
+8.5.5 Graphic Accelerators
+An important chip associated with video card is known as Graphic Accelerator which is the
+replacement older technology known as Graphic Co-Processor. The graphic accelerator chip
+is a dedicated unit that executes in-built video functions of image construction and rendering,
+thus, releasing the microprocessor (main processor) from this work. The accelerator chips are
+optional but they are required due to noticeable impact on the performance of the computer,
+especially in graphics-intensive tasks such as- Rendering of 3D models and images, Video
+editing and Gaming. The graphic accelerator are needed if you need the following:
+      Good support to 3-D graphics.
+      Better resolution of graphics.
+      Larger size of memory in the frame buffer.
+      Better speed of display of drop-down menu.
+      Good quality video playback.
+The Graphics accelerators are widely used in industries such as- Motion pictures for special
+effects, Computer-aided design (CAD), Video games, 3D-effect etc.
+
+What is a 3-D Accelerator?
+The accelerator chip that has built-in ability to perform the mathematical calculations and
+execute the algorithms required for 3-D image generation and rendering, are called 3-D
+Accelerator. A 3-D image is just an illusion for human eyes which basically represents a
+projection of 3-D images/videos on 2-D monitor screens. This conversion takes place by
+projection and transparency effects, perspective effects, color depth and lighting effects. In
+addition, the following techniques can be used for creating 3-D images on 2-D screens: (i)
+Ray-Tracing, which traces the path of light rays emitted by a light source; (ii) Z-buffering,
+which uses a buffer to store the third axis, i.e., Z-axis positions and (iii) Double-Buffering,
+which uses two buffers in place of a single buffer.
+
+8.5.6 Video Card Interfaces
+A video card interface connects the video display to the computer system in order to improve
+the performance of the visual data you see on your screen. The video card can either be a
+separate component which is plugged into a slot on the motherboard of the computer or it may
+be integrated into the motherboard known as “onboard”. For isolated video cards, the
+connection is realized using either Peripheral Connect Interface (PCI) or Accelerated
+Graphics Port (AGP) bus.
+
+
+                                                                                                              90
+    PCI- It is introduced by Intel and also known as Peripheral Component Interconnect. It is                                                           I/O Technology
+     a high-speed common bus which is used to attach the computer peripherals to the
+     motherboard. It is used to attach sound cards, network cards and video cards. The
+     computers may use now some modern technologies like PCI-Express (PCIe), USB and
+     AGP.
+    AGP-It is also known as Advanced Graphics Port. It is a standard connector port used to
+     connect the video card with the microprocessor and the main memory. It is a dedicated
+     high-speed connection interface which is used by only graphics subsystem. AGP employs
+     pipelining, isolated data and address buses and high-speed mode to improve the
+     performance of graphics card.
+     In specific computers, the video card is directly connected with the microprocessor and
+     may use direct memory access (DMA) I/O technique to send data from main memory to
+     frame buffer.
+
+
+8.6         SOUND CARDS
+Multimedia has become an indispensable component of personnel computers to play different
+music files like MP3, MP4, WAV (Waveform audio file), WMA (Windows media audio),
+AAC (Advanced audio coding), FALC (Free lossless audio codec), OGG (The latest Free
+Sound format standard) etc.
+The Sound card can either integrated into motherboard (built-in sound card) or connected
+through expansion slot. As you may study in computer networks, the analog sound waves
+could be converted into electrical form using electrical signals, which is used to compute the
+strength of sound. Usually, the analog audio signal is converted into digital audio (or digital
+signals) in the form of bits using sampling process. The microprocessor manipulates the digital
+audio bits and this data is sent to the sound card. The sound card converts this data into analog
+audio in order to play back through the speakers or headphones. The major functions of a
+modern sound card are as follows:
+     1. Conversion from digital sound signals to analog form to play back the sound.
+     2. Amplifiers to augment the strength of sound signals
+     3. Sound recording.
+     4. Sound synthesis.
+     5. Mixing of sound from various resources.
+
+The three basic issues relating to sound cards are - Compatibility, Connections and Quality.
+           Compatibility: Sound cards must be compatible for hardware as well as for software
+            to meet the current industry standards/protocols. Some specific software like games
+            need sound cards to be compatible with industry standards. You may refer to further
+            readings to know about these standards.
+           Connections: The sound card must provide different connections in order to perform
+            various functions. It should provide MIDI port (Musical Instrument Device Interface)
+            which allows user to produce music directly by using synthesizer circuit in the sound
+            card. It also allows connecting a Piano keyboard to the computer system.
+           Quality: There exist different sound cards which provide sounds with different
+            qualities. The quality of sound differs due to the noise control, digital quality and the
+            ranges of frequency supported by the sound card.
+
+Check Your Progress 2
+
+1.   Explain the concept of a frame buffer in the context of Video Card interfaces.
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+2.   What do you understand by horizontal and vertical frequencies?
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+3.   Compute the minimum required video memory for 16 color depth and a monitor screen
+     with the highest possible resolution 7680x4320.
+                                                                                                                                                                  91
+     .................................................................................................................................................   I/O Technology
+
+     .................................................................................................................................................
+     .................................................................................................................................................
+4.   Explain sound card. What are the functions of sound card?
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+
+
+
+8.7 DIGITAL CAMERA
+The first digital camera was invented in the year 1975 by Steven Sasson at Eastman Kodak.
+Digital camera is a hardware device that takes images or record videos and stores them on
+memory as digital data on memory card instead of on photographic film in analog camera. In
+digital Camera, the images are stored in digital form and thus they can be reused later for
+different purposes like printing, editing etc. Since the digital camera takes images (input) and
+sends them to computer (output), it is considered as input as well as output device.
+Figure 8.14 depicts the digital camera which is taking an image of subject (scene) under
+consideration. A digital camera consists of a sequence of lenses which focuses light on to a
+semiconductor device to create an image of a scene under consideration. The semiconductor
+device, in turn, records this light as digital images by using an in-built processor.
+The semiconductor device is known as an Image sensor which converts light into electrical
+charges. Two types of Image sensors exist: Charge Coupled Devices (CCD) and
+Complementary Metal Oxide Semiconductor (CMOS). CCD is more popular and powerful
+kind of sensor in comparison to CMOS image sensors.
+
+
+
+
+                                      Figure-8.14: Working of a Digital Camera
+The resolution (pixels) of digital camera is major deciding factor for the quality images. The
+higher the resolution, the better the digital camera is. The major benefits of a digital camera are
+as follows
+      Allows user to see the videos and images immediately
+      Allows user to store thousands of images/videos due to in-built memory
+      Digital cameras are portable
+      Allows user to edit images directly
+      Allows flexibility in printing of desired images
+
+8.7.1 Webcam
+A digital camera without storage connected to computer system or network is referred as
+Webcam. In modern computers, the webcam can either be a separate component which is
+plugged into the computer or be an in-built integrated camera. In order to use webcams, it is
+necessary to install the required software. A webcam is an input device which is used to
+capture the images/videos and then send it to the computer. Webcams are used for
+videoconference or video calling or online meeting using Google Meet, Zoom, MS Team and
+others services.
+                                                                                                                                                                  92
+                                                                                                      I/O Technology
+8.8 Voice Based Input Device
+Modern devices are capable to take human voice as input using speech recognition processes
+and execute applications accordingly. These devices are known as Voice Based Input devices.
+As compared to microphone, the speech recognition process of these devices recognizes
+human voice; converts it into machine-language and execute programs/applications
+accordingly. Figure 8.15 two devices which use speech recognition process to recognize
+human voice.
+
+
+
+
+               Figure-8.15: (a) Siri (b) Echo Dot 3 Smart Speaker with Alexa
+The Voice Based Input Devices can recognize spoken words in two ways. The spoken words
+can either be recognized from a pre-defined vocabulary or be recognized from a known
+speaker after training of the input device. Whenever speaker utters a word from the pre-defined
+vocabulary, the Voice Based Input device may display the characters of monitor screen for
+verification by the speaker. However, some of these devices may process the speech without
+verification from the speaker. The process of speech recognition compares each uttered word
+with the words stored in pre-defined vocabulary table.
+
+8.8.1 Siri
+Apple Inc. offers a built-in, voice-controlled virtual assistant with most of products i.e.,
+iPhone, iPad, Apple Watch or Mac (macOS Sierra and later) etc. This voice-controlled
+personal assistant is known as Siri. The users may talk to Siri as they talk to their friends. Siri
+allows a seamless interaction with Apple devices such that user speaks to Siri and Siri speaks
+to user. Siri helps users to get their job done after receiving user commands. Siri can help to
+open a file, send messages, open a web browser, open a website, booking a ticket, watch
+movies, and many other activities.
+Siri works based on the Artificial Intelligence and Natural Language Processing fields. It
+consists of three components -Conversational interface, personal context awareness and
+service delegation systems. The conversational interface understands the user word-for-word
+manner and the semantic of text is produced using personal context awareness which is based
+on habit and language of the user. The service delegation helps to deliver services using built-
+in apps and their inner workings.
+
+8.8.2 Alexa
+Amazon offers virtual interactive voice-based AI powered digital assistant known as Alexa.
+This device has been designed in association with Alexa Voice Service (AVS) in order to
+simulate real conversations. “Alexa” is basically the “wake word” which is used to alert the
+device to start listening the voice to perform some tasks. Alexa employs intuitive voice
+commands to provide services to perform some specific tasks. Figure 8.15(b) depicts the
+Amazon Alexa. It is available as Echo speakers, smart thermostats, lamps and lights, and right
+on your phone through the Alexa app. Alexa can do quick math, play music, check news and
+weather updates, read emails and control many of the smart products.
+Alexa also works based on the Artificial Intelligence and Natural Language Processing fields.
+It Alexa consists of speakers, microphone and a processor which is used to activate the device.
+It receives input and sends it to cloud where Alexa Voice services (AVS) interprets and
+understands the user input. Accordingly, AVS sends the appropriate output back to user
+device. The internet connection is the basic requirement to use Alexa.
+
+
+8.9 PRINTERS
+
+                                                                                                               93
+Printers are devices that accept textual and graphical contents as output from a computer            I/O Technology
+system and print contents on paper in a controlled manner. The text and photographic images
+are produced by printers. Printers differ in technology used, memory, speed, resolution, color
+supported, size, hardware compatibility, cost and others factors. The present-day printer
+technologies include the dot matrix printer, Inkjet or tank printers, Laser Printers etc. to serve
+different needs. The available printers can be divided into two classifications-Impact and Non-
+impact printers. Figure 8.16 shows the classifications of printers.
+
+
+
+
+                            Figure-8.16: Classification of Printers
+
+8.9.1 Impact Printers
+Impact printer uses mechanical components for printing i.e., physical contact between printing
+head and paper. In order to print, the characters and graphics are produced on a paper by
+striking. They produce banging noise during printing. Impact printers can be divided further
+two categories-Character and line printers. The character printers print only one at a time by
+striking on ribbon whereas line printers print one line at time. The line printers are fast and
+costly printer in comparison to character printers. Different types of impact printers are line
+printers, dot-matrix printers and, daisy-wheel printers.
+
+
+
+
+                                                                  (b)
+                    (a)
+                Figure-8.17: (a) Dot-matrix printer (b) Local Railway ticket
+
+Dot Matrix Printer
+A Dot Matrix Printer (DMP) employs fixed number of pins to print on paper. The print head
+with many pins runs back and forth on the page and prints by striking against a socked cloth
+ribbon in order to make a mark on paper. In DMP, the characters are using matrix of dots and
+the printed character is basically an accumulation of several dots on the paper. Therefore, the
+arbitrary font or graphics will be generated in each printing. Figure 8.17 shows a DMP and the
+local railway ticket printed by DMP.
+
+8.9.2 Non-Impact Printers
+In non-impact printer, no mechanical moving component is employed for printing. These
+printers don’t strike or impact the ribbon for print. The technologies used by non-impact
+printers are chemical, inkjet, electrostatic, xerographic and laser. These printers work silently.
+Non-impact printers can be further divided into two categories-Character and Page printers.
+The non-impact character printers spray tiny drops of ink on to the without striking/physical
+contact with paper. The page printers print one full page at once. Different types of non-impact
+printers are inkjet, photo, and laser printers.
+Laser Printer
+
+                                                                                                              94
+Laser printers are very common page printers and print one page at once. Laser printers            I/O Technology
+employ a focused light beam to transfer image or text onto paper. The modern laser printer use
+Resolution Enhancement Technology (RET) which is introduced by Hewlett-Packard. This
+technology smoothens the edges of character, diagonal lines etc. to produce better quality
+printouts. To produce high quality print, the basic requirement is the memory which increases
+as a square of resolution i.e., dots per inch (DPI). For 600 dpi, approximately 3.5 MB
+(600x600 bits) memory is required whereas 14 MB (1200x1200 bits) is required for 1200 dpi.
+Figure 8.18 depicts a single function monochrome laser printer.
+
+
+
+
+                 Figure-8.18: Single function Monochrome Laser Printer
+
+
+8.10 SCANNERS
+A scanner is an electronic device which is used to capture images from tangible sources like
+photographic images, paper, posters, slides and others. The scanner converts the captured
+images into electronic form and stores them in computer memory in order to view/modify
+later. The scanner employs light sensors arranged in the form of an array in scan-able area. The
+light sensors detect differences in brightness of reflections from an image and then scan the
+source.
+The existing scanners differ in many factors such as compatibility, resolution, support for
+different media and interfaces, etc. Two popular types of scanners are - Flatbed Scanners and
+Handheld Scanners.
+Flatbed Scanners are used to scan high-resolution tangible images into detailed and sharp
+electronic images. The images are placed on a flat glass tray and movable sensors are used to
+scan the images. Figure 8.19(a) shows a flatbed scanner. Handheld scanners are used to scan
+the physical documents, and require good hand control for high quality scanning. These are the
+most portable and cheapest scanners and shown in Figure-8.19(b).
+
+Scanning is used for many different applications. The scanners are used as Magnetic Ink
+Character Recognition (MICR) scanner in order to scan cheques and Bar-Code readers to
+identify different objects. One more application is Optical Recognition of Characters (OCR).
+The OCR software use character/pattern matching algorithms to recognize characters and
+converts the scanned text to a text file. The OCR technology is very much useful in digitizing
+the ancient text written in old scripts.
+
+
+
+
+                  Figure-8.19: (a) Flatbed Scanner (b) Handheld Scanner
+
+8.10.1 Resolution
+The resolution of scanner is the quality of image achieved by scanner. It is measured in dots
+per inch (dpi) and it indicates the number of dots per inch scanned horizontally and vertically.
+                                                                                                            95
+It implies that the more is the dpi of a scanner, the more details a scanned electronic image will                                                       I/O Technology
+have. The scanned file size increases with increased resolution. There are various ways to
+measure the resolution.
+
+Optical Resolution - The upper resolution limit of a scanner which is used to scan the images
+is known as optical resolution (hardware resolution). For example- if the optical resolution of
+a scanner is 300 dpi, it means 90000 (300x300) pixels per square inch can be captured by the
+scanner. The scanners may be available with optical resolutions of 300, 600, 1200, 2400 dpi or
+even more.
+
+Interpolated Resolution- The resolution of image can be augmented using interpolation
+algorithms and this resolution is known as Interpolation resolution. The interpolation
+technique employing complex algorithms is used to add intermediate pixels based on the
+properties of surrounding pixels. The interpolation technique results in increased size of
+scanned images but it provides smoother and high-quality images without adding any
+additional information. For instance- if the optical and interpolated resolutions are 300x300
+dpi and 4800x4800 dpi respectively. This implies 90000 pixels per square inch can be captured
+by the scanner while the interpolation algorithm can add 15 pixels between every pair of pixels
+to increase the dpi of image.
+
+
+8.11 MODEMS
+Modem (i.e., modulator-demodulator) is a device that connects two computers using telephone
+lines in order to exchange data with each other. The modem receives digital signals from
+computer, puts them into analog circuit by modifying a constant wave (known as carries) and
+then analog signals are transmitted over the telephone lines. This process is known as
+modulation. It occurs whenever user connects to the Internet. Demodulation is the inverse
+process of modulation in which the digital signals are derived from the modulated wave. It
+occurs whenever user receives data from a website, which is then displayed by your browser.
+Figure 8.20 shows the process of modulation and demodulation performed by the modem. You
+may refer to further readings for more details on modulation and demodulation techniques.
+
+
+
+
+                    Figure-8.20: Modulation and Demodulation process by Modem
+
+Check Your Progress 3
+
+1.   Explain webcam and its major benefits.
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+
+
+
+
+                                                                                                                                                                  96
+2.   How characters are recognized by voice-based input devices?                                                                                         I/O Technology
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+3.   Compare impact and non-impact printers.
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+4.   Explain Interpolated resolution.
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+5.   How many pixels can be captured by a scanner with 600 dpi optical resolution?
+     .................................................................................................................................................
+     .................................................................................................................................................
+     .................................................................................................................................................
+
+
+
+8.12 SUMMARY
+This unit discussed several input/output devices and the technologies behind them. This unit
+covers different input device along with different components or types or features. It is
+discussed Mouse and classifications of Mice, Keyboard along with its features, voice-based
+input devices, scanners and webcam its different types. This unit also discussed output devices
+along with other components or types or features. It discussed computer monitors with three
+different categories i.e., CRT, LCD and TFT screens. The printers with their different
+categories have also been discussed. The video cards have also been discussed with their
+characteristics like resolution, color depth, video memory, refresh rates, graphic accelerators
+and video card interfaces. It also discussed sound cards with its functions and different
+characteristics. At last, the modem device is discussed in brief manner.
+
+
+8.13 SOLUTIONS/ ANSWERS
+Check Your Progress 1
+1. Mechanical mouse has a rubber or metal ball in middle, which is used to control the
+   movement of cursor. The sensors inside the ball detect the rotation of ball. When the ball
+   rolls with the movement of mouse, it causes sensors to detect the rotation of ball along the
+   two axes which consequently send signals to monitor screen. Figure 8.1(a) depicts the
+   mechanical mouse.
+   Optical mice use light emitting diodes (LEDs), optical sensors and digital image
+   processing. The optical mouse detects by sensing the changes in the reflected light. The
+   change in reflected light is measured by analyzing the images and the cursor moves on
+   screen accordingly. Figure 8.1(b) shows the optical mouse.
+
+2.   Scan Codes-When a key is pressed on a keyboard, it transfers the scan code relating to
+     those keys to the processor. Scan code of every key is unique. The scan codes are used to
+     communicate the desired data or action to the processor. A keyboard of processor is
+     connected through interrupt driven I/O mechanism. Therefore, when a key or several keys
+     are pressed together on the keyboard, it interrupts the processor, provided processor has
+     enabled interrupts. The processor receives the scan code/codes and identifies the key or
+     keys that were pressed using the scan code table stored in the ROM BIOS.
+
+3.   LCD monitors and LED monitors differ only in terms of backlighting; typical LCD
+     monitors uses fluorescent backlights whereas an LED monitor uses light-emitting diodes.
+     The earlier LCD monitors used CCFL instead of LEDs to illuminate the screen.
+
+                                                                                                                                                                  97
+Check Your Progress 2                                                                             I/O Technology
+
+1.   The display memory which is used to store the data for images is known as frame buffer.
+     At any moment, the frame buffer consists of data for bit-map representation of current
+     image on screen and the next image. The frames are read dozens of times per second and
+     sent to the monitor using a cable in serial manner. Upon receiving the stream of data, the
+     monitor forms and displays it on the screen by scanning raster movement from first up to
+     down one row at a time. Based on this raster movement CRT, the monitor will illuminate
+     its small phosphor dots.
+
+2.   Refer text 8.5.4
+
+3.   The minimum required video memory is computed as follows-
+
+         Number of Pixels                        = 7680  4320 = 33,177,600
+         Color Depth (16-colours = 24)           = 4-bits
+         Minimum Memory                          = 132,710,400 bits (16,588,800 bytes)
+                                                 = 16,200 KB = 15.82 MB
+
+
+4.   Sound card is used to convert digital audio data into analog audio in order to play back
+     through the speakers or headphones. The Sound card can either integrated into
+     motherboard (built-in sound card) or connected through expansion slot. The major
+     functions of a modern sound card are as follows:
+         a) Conversion from digital sound signals to analog form to play back the sound.
+         b) Amplifiers to augment the strength of sound signals
+         c) Sound recording.
+         d) Built-in synthesizer
+         e) Sound mixer circuits.
+
+Check Your Progress 3
+1. A digital camera without storage connected to computer system or network is referred as
+   Webcam. In modern computers, the webcam can either be a separate component which is
+   plugged into the computer or be an in-built integrated camera. The webcam can be used
+   for video conference or video calling or online meeting using Google Meet, Zoom, MS
+   Team and others services.
+
+2.   These devices recognize spoken words in two ways. The spoken words can either be
+     recognized from a pre-defined vocabulary or be recognized from a known speaker after
+     training of the input device. Whenever speaker utters a word from the pre-defined
+     vocabulary, the Voice Based Input device may display the characters on monitor screen
+     for verification by the speaker. However, some of these devices may process the speech
+     without verification from the speaker.
+
+3.   Impact printer uses mechanical components for printing i.e., the characters and graphics
+     are produced on a paper by striking whereas non-impact printer don’t strike or impact the
+     ribbon to print on paper. Impact printers produce banging noise during printing while non-
+     impact printers work silently.
+
+4.   Refer text 8.10.1
+
+5.   The scanner can capture 360000 pixels per square inch
+
+
+
+
+                                                                                                           98
+
