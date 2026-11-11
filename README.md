@@ -1,4 +1,17 @@
+
 # MCS-202 Computer Organisation Study Studio
+
+**🔗 Live Website:** [mcs202-interactive-learning.vercel.app](https://mcs202-interactive-learning.vercel.app)
+
+A React study app covering all 16 units across the four IGNOU course blocks.
+It maps 227 section lessons from the books. Each lesson has a guided reader
+that reveals the complete section text in short recall steps, interactive visual
+models, and access to the intact section text. All 197 printed source figures are
+catalogued and presented as interactive, animated walkthroughs inside their
+own lessons; source figure-number inconsistencies are explained in place. Unit pages also include a searchable source reader, retrieval
+questions with feedback, exam answer prompts, and a saved topic-by-topic mastery
+checklist. Light and black/charcoal dark themes are available.
+
 
 A React study app covering all 16 units across the four IGNOU course blocks.
 It maps 227 section lessons from the books. Each lesson has a guided reader
