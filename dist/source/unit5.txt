@@ -1,0 +1,1115 @@
+ UNIT 5 THE MEMORY SYSTEM
+Structure                                                                      Page Nos.
+5.0     Introduction
+5.1     Objectives
+5.2     The Memory Hierarchy
+5.3     SRAM, DRAM, ROM, Flash Memory
+5.4     Secondary Memory and Characteristics
+        5.4.1   Hard Disk Drives
+        5.4.2   Optical Memories
+        5.4.3 Charge-coupled Devices, Bubble Memories and Solid State Devices
+5.5     RAID and its Levels
+5.6     Summary
+5.7     Answers
+
+
+5.0 INTRODUCTION
+In the previous block, fundamentals of a computer system were discussed. These
+fundamentals included discussion on von-Neumann architecture based machines,
+instruction execution, representation of digital data and logic circuits etc. This Block
+explains the most important component of memory and Input/output systems of a
+computer. This unit covers the details of the Memory. This unit discusses issues
+associated with various components of the memory system, the design issues of main
+memory and the secondary memory. Various characteristics of secondary memory and
+its types that are used in a computer system, would also be discussed. The unit also
+defines how multiple disks can be used to create a redundant array of disks that can be
+used to provide a faster and reliable storage.
+
+
+5.1 OBJECTIVES
+After going through this Unit, you will be able to:
+
+     explain the key characteristics of various types of memories and memory hierar-
+      chy;
+     explain and differentiate among various types of random access memories;
+     explain the characteristics of secondary storage devices and technologies;
+     explain the latest secondary storage technologies;
+     identify the various levels of RAID technologies
+
+
+5.2 THE MEMORY HIERARCHY
+In computers, memory is a device used to store data in binary form. Smallest unit of
+binary data is called ‘bit’. Each bit of binary data is stored in a different cell or storage
+unit and collection of these cells is defined as the memory. A memory system is
+composed of a memory of fixed size and procedures which tells how to access the
+data stored in the memory. Based on the persistence of the stored data, memory is
+classified into two categories:
+
+     Volatile memory: which loses its data in the absence of power.
+
+     Non-volatile memory: Do not lose data when power is switched off.
+Another classification of memory devices, which is also the objective of this unit is
+based on the way they interact with the CPU which can be determined from figure 5.1
+Main/ Primary memory interact directly with the CPU e.g. RAM and ROM.
+                                                                                                                    5
+Basic Computer Organisation   Auxiliary/ secondary memory need I/O interface to interact with the CPU e.g.
+                              magnetic disks and magnetic tapes. There are other memories like cache and registers,
+                              which directly interacts with the CPU. Such memories are used to speed up the
+                              program execution. For execution, a program must be loaded into the main memory
+                              and should be stored on the secondary storage when it completes its execution.
+                              Auxiliary memory is used as a backup storage, whereas main memory contains data
+                              and program only when it is required by the CPU.
+
+
+
+
+                                                     Figure 5.1: Memory Interaction with CPU
+
+                              Various memory devices in a computer system forms a hierarchy of components
+                              which can be visualised in a pyramidal structure as shown in Figure 5.2. As you can
+                              observe in the Figure 5.2 that at the bottom of the pyramid, you have magnetic tapes
+                              and magnetic disks; and registers are at the top of the pyramid. Main memory lies at
+                              the middle as it can interact directly with the CPU, cache memory and the secondary
+                              memory. As you go up in the pyramid, the size of the memory device decreases, the
+                              access speed, however, increases and cost per bit also increases. Different memories
+                              have different access speeds. CPU registers or simply registers are fastest among all
+                              and are used for holding the data being processed by the CPU temporarily but because
+                              of very high cost per bit they are limited in size. Instruction execution speed of the
+                              CPU is very high as compared to the data access speed of main memory. So, to
+                              compensate the speed difference between main memory and the CPU, a very high
+                              speed special memory known as cache is used. The cache memory stores current data
+                              and program plus frequently accessed data which is required in ongoing instruction
+                              execution.
+
+                              You may note the following points about memory hierarchy:
+                                  The size of the memory increases as you go down the memory hierarchy.
+                                  The cost of per unit of memory increases as you go up in the memory hierarchy
+                                   i.e. Memory tapes and auxiliary memory are the cheapest and CPU Registers are
+                                   the costliest amongst the memory types.
+                                  The amount of data that can be transferred between two consecutive memory
+                                   layers at a time decreases as you move up in the pyramid. For example, from
+                                   main memory to Cache transfer one or few memory words of size in Kilobytes
+                                   are accessed at a time, whereas in a hard disk to main memory transfer, a block
+                                   data of size of 1 Megabyte is transferred in a single access.
+                                  One interesting question about the memory hierarchy is why having faster
+                                   smaller memories does not slow down the computer? This is primarily due to the
+    6
+     fact that there is very high probability that a program may access the instructions     The Memory System
+     and data in the closed vicinity of presently executing instruction and data. This
+     concept is further explained in next unit.
+
+
+
+
+          Figure 5.2: Memory Hierarchy
+
+In subsequent sections and next unit, we will discuss various types of memories in
+more detail.
+
+
+5.3 SRAM, DRAM, ROM, FLASH MEMORY
+The main memory is divided into fixed size memory blocks called words. Size of the
+memory word may be limited by the communication path and the processing unit size.
+As word size/ length denotes the amount of bits that can be processed by the processor
+at one time. Each memory word is addressed uniquely in the memory. A 32-bit
+processor uses a word size of 32 bits whereas 64-bit processor uses a word of 64 bits.
+RAM (random access memory) is a volatile memory i.e. content of the RAM vanishes
+when power is switched off. RAM is a major constituent of the main memory. Both
+read and write operations can be performed on RAM, therefore, it is also known as
+read-write memory. Access time of each memory word is constant in random access
+memory. RAM can be constructed from two types of technologies - Static Random
+Access Memory (SRAM) and Dynamic Random Access Memory (DRAM). The main
+difference being that DRAM loses its content even if power is on, therefore requires
+refreshing of stored bits in DRAM. Thus, DRAM is slower than SRAM, however, the
+DRAM chips are cheaper. In general, DRAM is used as the main memory of the
+computer, while SRAM is used as the Cache memory, which is discussed in details in
+the next unit.
+SRAM
+SRAM can be constructed using flip-flops. It is a sequential circuit. A SRAM cell
+using SR flip flop is shown in figure 5.3. As you can observe, this sequential circuit
+has three inputs: select, read/write, and input and single output: output. When select
+input is high “1” circuit is selected for read/write operation and when select input is
+low “0” neither read nor write operation can be performed by the binary cell. Thus,
+select input must be high in order to perform read/write operation by the binary cell.
+Binary cell reads a bit when read/write input is low “0” and writes when read/write
+input is high “1”. Third input input is used to write into the cell. The only caution over
+here is that when read/write input is low “0” i.e. we want to perform a read operation,
+then read operation must not be affected by the input input. This is ensured by
+                                                                                                                 7
+Basic Computer Organisation   inverted input to the first AND gate which guarantees the input to both R and S to be
+                              low and thus prevents any modification to the flip flop value. The characteristic table
+                              of SR flip flop is given in Unit 4 Block 1 for better understanding of the functioning
+                              of the binary cell.
+
+
+
+
+                                                         Figure 5.3: Logic Diagram of RAM cell
+
+                              Read operation: select is high “1”, read/write is low “0” and input is either low “0” or
+                              high “1” then input to R and S will be 0 and flip flop will keep its previous state and
+                              that will be the output.
+                              Write operation: select is high “1”, read/write is high “1” and if input is low “0” then
+                              R will be high “1” and S will be low “0” and flip flop will store “0” and if input is
+                              high “1” then R will go low”0” and S will go high “1” and flip flop will store “1”.
+
+                              A RAM chip is composed of several read/write binary cells. A block diagram of
+                              2mx n RAM is shown in Figure 5.4. The RAM shown has a total capacity of 2m words
+                              and each word is n bits long e.g. in 64 x 4 RAM, the RAM has 64 words and each
+                              word is 4 bits long. To address 64 i.e. 26words, we need 6 address lines. So in a 2m × n
+                              RAM, we have 2m words where each word has n bits and RAM has m-bit address
+                              which requires m___address lines. The RAM is functional only when chip select (CS1)
+                              signal =1 and CS2       = 0. If chip select signal is not enabled or chip select signal is
+                              enabled and neither read nor write input is enabled then data bus will in high
+                              impedance state and no operation can be performed. During high impedance state,
+                              other input signals will be ignored which means output has no logical significance and
+                              does not carry a signal
+
+
+
+
+                              Figure 5.4: Block Diagram of 2mx n RAM
+                                                                                           The Memory System
+DRAM
+Dynamic Random Access Memory (DRAM) is a type of RAM which uses 1 transistor
+and 1 capacitor (1T1C cell) for storing one bit. A block diagram of a single DRAM
+cell is shown in Figure 5.5. In DRAM, transistor is used as a gate which opens and
+closes the circuit and thus stops and allows the current to flow. Charging level of the
+capacitor is used to represent the bit “1” and bit “0”. As capacitors tends to discharge
+in a very short time period DRAM cells need to be refreshed periodically to store the
+binary information despite continuous power supply. Hence they are called dynamic
+random access memory. With low power consumption and very compact in size
+because of 1T1C architecture DRAM offers larger storage capacity in a single chip.
+Each DRAM cell in the memory is connected with Word Line (Rows) and Bit Line
+(Columns) as shown in Figure 5.5. Word line (rows) controls the gates of the transfer
+lines while Bit lines (columns) are connected to sense amplifiers i.e. to determine “0”
+or “1”.
+
+
+
+
+                              Figure 5.5: A DRAM cell
+Figure 5.6 presents the general block diagram of 2M 2M × N DRAM, where binary
+cells are arranged in a square of 2M × 2M words of N bit each. For example, 4 megabit
+DRAM is represented in a square arrangement of (1024 × 1024) or (210 × 210 ) words
+of 4 bit each. Thus, in the given example we have 1024 horizontal/ word lines and
+1024 × 4 column/ bit lines. In other words, each element, which consists of 4 bits of
+array, is connected by horizontal row lines and vertical column lines.
+
+
+
+
+Figure 5.6: Block Diagram of DRAM
+                                                                                                               9
+Basic Computer Organisation
+                              Selection and role of various signals for read and write operation is as follows:
+
+                              1. RAS (Row Address Strobe): On the falling edge of RAS signal, it opens or strobe
+                              the address lines (rows) to be addressed.
+
+                              2. /CAS (Column Address Strobe): Similar to /RAS, on the falling edge, this enables a
+                              column to be selected as mentioned in the column address from the rows opened by
+                              the /RAS to complete the read-write operation.
+
+                              3. R/(/W), Write enable: This signal determines whether to perform a read operation
+                              or a write operation. While the signal is low, write operation is enabled and data input
+                              is also captured on falling edge of /CAS whereas high enables the read operation.
+
+                              4. Sense amplifier compares the charge of the capacitor to a threshold value and
+                              returns either logic “0” or logic “1”.
+
+                              For a read operation once the address line is selected, transistor turns ON and opens
+                              the gate for the charge of the capacitor to move to the bit line where it is sensed by the
+                              sense amplifier. Write operation is performed by applying a voltage signal to the bit
+                              line followed by the address line allowing a capacitor to be charged by the voltage
+                              signal.
+
+                              ROM (Read-Only Memory)
+                              Another constituent of the main memory is ROM (read only memory). Unlike RAM,
+                              which is read-write memory and volatile, ROM’s are read only and non-volatile
+                              memory i.e. content of the ROM persist even if power is switched-off. Once data is
+                              stored at the time of fabrication, it cannot be modified. This is why, ROM is used to
+                              store the constants and the programs that are not going to change or get modified
+                              during their lifetime and will reside permanently in the computer. For example,
+                              bootstrap loader, which loads the part of the operating system from secondary storage
+                              to the main memory and starts the computer system when power is switched on, is
+                              stored in ROM.
+
+                              A block diagram of 2m× n ROM looks similar to that of RAM. As ROM is a read-only
+                              memory there is no need of explicit read and write signals. Once the chip is selected
+                              using chip select signals a data word is read and placed on to the data bus. Hence, in
+                              the case of ROM, you need an unidirectional data bus i.e. only in output mode as
+                              shown in figure 5.7. Another interesting fact about ROM is that, ROM offers more
+                              memory cells and thus, memory as compared to the RAM for same size chip.
+
+
+
+
+                              Figure 5.7: Block Diagram of 2mx n ROM
+
+    10
+                                                                                          The Memory System
+                          m                 m
+As shown in Figure 5.7, 2 × n ROM has 2 words of n bits each for which it has m
+address lines and n output data lines. For example, in 128 × 8 ROM, you have 128
+memory words of 8-bit each. For 128 × 8 ROM i.e. 2m = 27, m = 7, you need 7 address
+lines (minimum number of bits required to represent 128) and 8-bit output data bus.
+Figure 5.8 shows a 32×8 ROM.
+
+
+
+
+                     Figure 5.8: Internal diagram of 32x8 ROM
+
+
+Unlike RAMs, which are sequential circuits, ROMs are combinational circuits.
+Typically, to design a RAM of specific size you need a decoder and OR gates. For
+example, to design a ROM of size 32 x 8 bits you need a decoder of size 5×32 and 8
+OR gates. 5×32 decoder will have 5 input lines, which will act as 5 address lines of
+the ROM, the decoder will convert 5-bit input address to 32 different outputs. Figure
+5.8 shows the construction of 32 × 8 ROM using 5×32 decoder and eight OR gates for
+data output. ROMs of other sizes can be constructed similarly. For example, to
+construct a ROM of 64 × 4 ROM, you need a 6×64 decoder and four OR gates and to
+construct a ROM of size 256×8, you need 8×256 decoder and 8 OR gates.
+As discussed, ROMs are non-volatile memory and content of the ROM once written,
+cannot be changed. Therefore, ROMs are used to store the look-up tables for constants
+to speed up the computation. In addition, ROM can store the boot loader programs
+and gaming programs. All this requires, zero error in writing of such programs and
+therefore, ROM device fabrication requires very high precision. Constructing a ROM,
+as shown in figure 5.8, requires decision about which interconnections in the circuit
+should be open and which interconnections should be closed. There are four ways you
+can program a ROM which are as follows:
+1. Mask ROM (MROM): Masking of ROM is done by the device manufacturer in
+   the very last phase of the fabrication process on customers special request. Mask
+   ROMs are customised as per the user requirements, thus, are very costly as
+   different masks are required for different specifications. Because of very high cost
+   of masking, this customization is generally used in manufacturing of ROM at very
+   large scale.
+2. Programmable ROM (PROM): MROMs are not cost effective for small
+   productions, PROMs are preferred for small quantities. PROMs are programmed
+   using a special hardware which blow fuses with a very high voltage to produce
+   logic “0” and intact fuse defines logic “1”. The content of PROM is irreversible
+   once programmed.
+3. Erasable PROM (EPROM): EPROMs are third type of ROMs which are
+   restructured or reprogrammed using shortwave radiations. An ultraviolet light for
+Basic Computer Organisation        a specific duration is applied to the EPROM, which destroys/ erases the internal
+                                   information and after which EPROMs can be programmed again by the user.
+                              4. Electrically EPROM (EEPROM) : EEPROMs are similar to EPROMs except of
+                                 using ultraviolet radiations for erasing PROM, EEPROM uses electrical signals to
+                                 erase the content. EEPROM can be erased or reprogrammed by the user without
+                                 removing them from the socket.
+
+                              Flash Memory
+                              Flash memory is a non-volatile semiconductor memory which uses the programming
+                              method of EPROM and erases electrically like EEPROM. Flash memory was
+                              designed in 1980s. Unlike, EEPROM where user can erase a byte using electrical
+                              signals, a section of the memory or a set of memory words can be erasable in flash
+                              memory and hence the name flash memory i.e. which erases a large block of memory
+                              at once. Flash memory is easily portable and mechanically robust as there is no
+                              mechanical movement in the memory to read-write data. Flash memory is widely used
+                              in USB memory, SD and micro SD memory cards used in cameras and mobile phones
+                              respectively.
+                              There are two types of flash memory, viz. NAND flash memory, where read operation
+                              is performed by paging the contents to the RAM i.e. only a block of data is accessed
+                              not an individual byte or word; and NOR flash memory, which are able to read an
+                              individual memory byte/word or cell.
+
+                              The features of various semiconductor memories are summarised in the Table 1.
+
+                                                                      Erase
+                                                                                        Write          Volatile/
+                                   Memory              Type         Mechanism/
+                                                                                      Mechanism      Non- Volatile
+                                                                      Level
+                              Random-access
+                                                   Read–Write      Electrical/ Byte     Electrical     Volatile
+                              Memory (RAM)
+                              Read –only
+                                                    Read–Only      Not Applicable         Masks      Non-volatile
+                              Memory (ROM)
+                              Programmable
+                                                    Read–Only      Not Applicable       Electrical   Non-volatile
+                              ROM (PROM)
+                              Erasable PROM           Read-
+                                                                   UV light/ Chip       Electrical   Non-volatile
+                              (EPROM)                 mostly
+                              Electrically
+                                                      Read-          Electrical/
+                              Erasable                                                  Electrical   Non-volatile
+                                                      mostly           Byte
+                              (EEPROM)
+                                                      Read-          Electrical/
+                              Flash memory                                              Electrical   Non-volatile
+                                                      mostly           Block
+
+                                                     Table 1: Features of Semiconductor Memories
+
+
+                              Check Your Progress 1
+                              1.   Differentiate among RAM, ROM, PROM and EPROM.
+                                   ……………………………………………………………………………………
+
+                                   ……………………………………………………………………………………
+
+
+
+                              2.   What is a flash memory? Give a few of its typical uses.
+                                   ……………………………………………………………………………………
+
+                                   ……………………………………………………………………………………
+    12
+3.    A memory has a capacity of 16K  16                                                  The Memory System
+      (a) How many data input and data output lines does it have?
+      (b) How many address lines does it have?
+     ……………………………………………………………………………………
+
+     ……………………………………………………………………………………
+4. A DRAM that stores 4K bytes on a chip and uses a square register array. Each
+   array is of size 4 bits. How many address lines will be needed? If the same
+   configuration is used for a chip which does not use square array, then how many
+   address lines would be needed?
+   ………………………………………………………………………………………
+     ………………………………………………………………………………………
+5. How many RAM chips of size 256K  4 bit are required to build 1M Byte
+   memory?
+     ……………………………………………………………………………………...
+     ……………………………………………………………………………………...
+
+
+5.4       SECONDARY MEMORY AND
+          CHARACTERISTICS
+In previous section, we have discussed various types of random access and read only
+memories in detail. RAM and ROM together make the main memory of the computer
+system. You know that a program is loaded into main memory to complete its
+execution. Computational units or CPU can directly interact with the main memory.
+Hence, faster main memory, which can match with the speed of CPU, is always
+desirable. In the previous section configuration of two types of RAMs, viz SRAM and
+DRAM were discussed. As you may observe the SRAM consists of flip-flop based
+circuits, therefore, is quite fast in comparison to DRAM However, the cost per bit of
+DRAM is much less than the SRAM. Thus, you may observe the size of main memory
+is much more than cache. It is discussed in more details in the next unit. To achieve
+high speed, cost per bit of main memory is generally high which also limits its size.
+On the other hand, as we have discussed, RAM, which is a major constituent of the
+main memory, is volatile i.e. content of the main memory is lost when power is
+switched off. Because of above mentioned issues, you need a low cost and high
+capacity, non-volatile memory to store program files and the data for later use.
+Secondary memory devices which are at the bottom of the memory hierarchy pyramid
+are ideal for the said purpose. We will discuss various secondary storage devices in
+this section.
+
+5.4.1     Hard Disk Drive
+In the era of Big Data, in which variety of data is generated rapidly, large secondary
+storage has become an important component of every computer system. Today, hard
+disk drives (HDD) is the primary type of secondary storage. The size of hard disk
+drives in modern computer system ranges from Gigabytes (GB) to Terabytes (TB).
+Internal hard drives extends the internal storage of a computer system whereas
+external hard drives are used for back up storage.
+HDD are electro-mechanical storage devices, which store digital data in the form of
+small magnetic fields induced on the surface of the magnetic disks. Data recorded on
+the surface of magnetic disks is read by disks read/write head, which transforms
+magnetic signal to electrical signal for reading and electrical signal to magnetic field
+
+
+                                                                                                               13
+Basic Computer Organisation   for writing. HDD is composed of many concentric magnetic disks mounted on a
+                              central shaft as shown in Figure 5.8.
+
+
+
+
+                                     Figure 5.8: Internal structure of Hard disk drives (HDD)
+
+                              Figure 5.8 shows the internal structure of an HDD. An HDD is made of several
+                              concentric magnetic disks mounted on a central shaft called spindle. Each magnetic
+                              disk is made of either glass or an aluminium disk called platter. Each platter is coated
+                              with ferromagnetic material for storing data. Platter itself is made of non-
+                              ferromagnetic material so that its own magnetic field should not interfere the magnetic
+                              field of the data. Generally, both sides of the platter is coated with magnetic material
+                              for good storage capacity at low cost.
+                              Data recorded on the disk is accessed through a read/write head. Each side of the disk
+                              has its own read write head. Each read/write head is positioned at a distance of tens of
+                              nanometer called flying height to the platter so that it can easily sense or detect the
+                              polarization of the magnetic field.
+
+
+
+
+                                                  Figure 5.9: Read/ Write Head
+
+
+                              Two motors are used in HDD. First one is called the spindle motor, which is used to
+                              rotate the spindle on which all the platters are mounted. Second motor is used to move
+the read/write heads across the entire surface of the platter radially and is called            The Memory System
+actuator or access arm.
+Magnetic Read and Write Mechanisms
+During a read/ write operation, read/write head is kept stationary while platter is
+rotated by the spindle motor. As you know, data on the disk is recorded in the form of
+magnetic field. The current is passed through the read/write head which induces a
+magnetic field on the surface of platter and thus, records a bit on the surface. Different
+directions of current generates magnetic fields with different polarities and hence are
+used for storing “1” and “0”. Similarly, to read a bit from the surface, the magnetic
+field is sensed by the read/write head which produces an electric current of the same
+polarity and hence the bit value is read.
+Data Organization and Formatting
+As discussed and shown in figure 5.8, hard disk drives consists of number of
+concentric platters which are mounted on a spindle forming a cylindrical structure.
+Data is written in the form of magnetic fields on both surfaces of these platters and is
+read by read/write head which is connected to an actuator. In this section, we will
+discuss structure of magnetic disk in detail.
+Structure of the disk is shown in figure 5.10. As you know, each magnetic disk is a
+circular disk mounted on a common spindle but entire disk space is not used for data.
+Disk surface is divided in to thousands of concentric circular regions called tracks.
+The width of every track is kept the same. Data is stored in these tracks. Magnetic
+field of one track should not affect the magnetic region in the other track thus two
+tracks are kept apart with each other by a constant distance. Further, each track is
+divided into number of sectors and two sectors are kept apart using inter-sector gap.
+Data is stored in these sectors. Each track forms a cylindrical structure with other
+tracks on other platters below or above it. For example, an outer most cylinder will
+have outer most track of all the platters. So, if we have n tracks in a platter then there
+will be n concentric cylinders too.
+Components of the drive are controlled by a disk controller. Now a days, disk
+controllers are built in to the disk drive. A new or blank magnetic disk is divided into
+sectors. Each sector has three components: header, 512 byte (or more) data area and a
+trailer. This process of is called physical / low level formatting. Header and trailer
+contains metadata about the sectors e.g. sector number, error correcting code etc. Disk
+controller uses this information whenever it writes or reads a data item on to a sector.
+Data is stored in series of logical blocks. The disk controller maps the logical blocks
+on to the physical disk space and also manages sectors which have been used for
+storing data and which are still free. This is done by the operating system after
+partitioning the disk in to one or more groups of cylinders. Disk controller stores the
+initial data structure file of every sector on to the disk. This data structure file contains
+a list of used and free sectors, list of bad sectors etc. Windows uses File Allocation
+Table (FAT) for the said purpose.
+
+
+
+
+                                                                                                                    15
+Basic Computer Organisation
+
+
+
+
+                                                Figure 5.10: Magnetic Disk Structure of CAV
+
+                              There are two arrangements with which platters are divided into tracks and sectors.
+                              The first arrangement is called as constant linear velocity (CLV), in which the density
+                              of bits per track is kept uniform, i.e. outer tracks are longer than the inner tracks and
+                              hence contains more number of sectors and data. Outermost tracks are generally 40%
+                              longer than the innermost track. In this arrangement, in order to maintain uniform bit/
+                              data rate among tracks, the rotation speed is increased from outermost to inner most
+                              track. This approach is used by CD-ROM and DVD-ROM drives.
+
+                              In another approach called as constant angular velocity (CAV), the density of bits /
+                              data per track is decreasing as we move from innermost track to outermost track by
+                              keeping the disk rotation speed constant. As disk is moving at a constant speed, the
+                              width of the data bits increases in the outer tracks, which results in the constant data
+                              rate. Figure 5.10 shows that the width of sectors in outer tracks is increasing and
+                              density of bits is decreasing.
+
+                              Disk Performance
+
+                              Data is read and written on the disks by the operating system for usage at later stage.
+                              A disk stores the programs and related data. However, disk is a much slower device
+                              and the programs stored on it cannot be executed by the processing unit directly.
+                              Therefore, the programs and its related data, which are not in the main memory, are
+                              loaded in the main memory from the secondary storage. Since, the speed of disk
+                              read/write is very slow in compared to RAM, time to read or write a byte from or on
+                              to the disk affects the computer overall efficiency. Therefore, in a single read/write
+                              operation on disk data of one or more sectors is transferred to/from the memory. An
+                              operating system, in general, request for read/write to one or more sectors on the disk.
+                              The time taken by the disk to complete a read/ write request of the operating system is
+                              known as disk access time. There are number of factors which affect the performance
+                              of the disk. These factors are:
+                              1. Seek Time: It is defined as a time taken by the read/write head, or simply as a
+                                 head, to reach the desired track on which the requested sector is located. Head
+                                 should reach the desired track in minimum time. Shorter seek time leads to faster
+                                 I/O operation.
+                              2. Rotational Latency: Since, every track consists of a number of sectors, therefore,
+                                 the read/write operation can be completed only when the desired sector is
+                                 available under the read/write head for the I/O operation. It depends on the
+    rotational speed of the spindle and is defined as a time taken by a particular sector    The Memory System
+    to get underneath the read/write head.
+3. Data Transfer Rate: Since, large amount of data is transferred in one read/write
+   operation, therefore, the data transfer rate is also a factor for I/O operation. It is
+   defined as the amount of data read or written by the read/write head per unit time.
+4. Controller overhead: It is the time taken by the disk controller for mapping logical
+   blocks to physical storage and keep track of which sectors are free and which are
+   used.
+5. Queuing Delay: time spent waiting for the disk to be free.
+The disk access time is defined as the summation of seek time, rotational latency, data
+transfer rate, controller overhead and queuing delay and is given by the equation.
+
+    𝑎𝑐𝑐𝑒𝑠𝑠       𝑠𝑒𝑒𝑘        𝑟𝑜𝑡𝑎𝑡𝑖𝑜𝑛𝑎𝑙          𝑑𝑎𝑡𝑎              𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑟
+                        𝑞𝑢𝑒𝑢𝑖𝑛𝑔
+
+Out of the five parameters mentioned in the above equation, most of the time of the
+disk controller goes in moving the read/write to the desired location and thus seeking
+the information. If the disk access requests are processed efficiently then performance
+of the system can be improved. The aim of disk scheduling algorithm is to serve all
+the disk access requests with least possible head movement. There are number of disk
+scheduling algorithms which are presented here in brief.
+
+First Come First Serve (FCFS) scheduling: This approach serves the disk access
+request in the order they arrived in the queue.
+
+Shortest Seek Time First (SSTF) scheduling: Shortest Seek Time First disk scheduling
+algorithm selects the request from the queue which requires least movement of the
+head.
+
+SCAN scheduling: The current head position and the head direction is the necessary
+input to this algorithm. Disk access requests are serviced by the disk arm as disk arm
+starts from one end of the disk and moves towards the other end. On reaching the
+other end the direction of the head is reversed and requests are continued to be
+serviced.
+
+C-SCAN scheduling: Unlike SCAN algorithm, C-SCAN does not serve any request in
+the return trip. Instead, on reaching to the end, it reverses back to the beginning of the
+disk and then serves the requests.
+
+LOOK scheduling: LOOK is similar to SCAN algorithm with only a single difference,
+after serving the last request, LOOK algorithm does not go till the end instead it
+immediately reverses its direction and moves to the beginning of the other end.
+
+
+5.4.2     Optical Memories
+So far, the storage devices you have studied are based on either electric charge or
+magnetic field. Magnetic memories are primarily used as a secondary storage device,
+but they can easily be damaged. However they have lower cost per bit than solid state
+devices.
+First laser based memory was developed in 1982 by Phillips and Sony. Laser based
+storage devices uses a laser beam to read or write data and are called as optical
+memories or optical storage devices. As laser beams can be controlled more precisely
+and accurately than magnetic read/write heads. Data stored on optical drives remains
+unaffected by the magnetic disturbances in its surrounding.
+
+
+                                                                                                                 17
+Basic Computer Organisation   Initially, these optical storage devices commonly known as compact disk (CD) or CD-
+                              DA (Digital Audio) were used to store only audio data of 60 minute duration. Later,
+                              huge commercial success of CD lead to development of low cost optical disk
+                              technology. These CDs can be used as auxiliary storage and can store any type of
+                              digital data. A variety of optical-disk devices have been introduced. We briefly review
+                              some of these types.
+
+                              Compact Disk ROM (CD-ROM)
+                              Compact Disk or CD-ROM are made of a 1.2 mm thick sheet of a polycarbonate
+                              material. Each disk surface is coated with a reflective material generally aluminium.
+                              The standard size of a compact disk is 120 mm in diameter. An acrylic coat is applied
+                              on top of the reflective surface to protect the disk from scratches and dust.
+
+
+
+
+                                                      Figure 5.11: Outer Layout of a CD
+
+                              Unlike magnetic disks, data on an optical disk is recorded in a spiral shape tracks.
+                              Each track is separated by a distance of 1.6 mm. Data in a track is recorded in the
+                              form of land and pit as shown in Figure 5.13. When a focused laser beam in incident
+                              on to the optical disk, the disk is burned as per the digitally recorded data forming a
+                              pit and land structure. The data is read from the surface by measuring the intensity of
+                              the reflected beam. The pit area scatters the incident beam, whereas the land reflects
+                              the incident beam, which are read as “0” and “1” respectively.
+
+
+
+
+                               Figure 5.12: Spiral track of CD Figure 5.13: Land & Pit formation in CD track
+
+
+                              As shown in Figure 5.12, the tracks in CD are in spiral shape. The tracks in CDs are
+                              further divided into sectors. All sectors in CDs are equal in length. This means that
+                              density of data recorded on the disk is uniform across all the tracks. Inner tracks have
+                              less number of sectors whereas outer tracks have more sectors. CD-ROM devices uses
+                              constant linear velocity (CLV) method for reading the disk content. In this method, the
+disk is rotated at lower velocity as we move away from the center of the disk. This          The Memory System
+ensures a constant linear velocity at each track of the CD. The format of a sector of
+CD is show in Figure 5.14.
+
+        SYNC         HEADER                 DATA                 L-ECC
+
+
+   12 Bytes          4 Bytes              2048 Bytes           288 Bytes
+
+ Figure 5.14: Sector format of CD
+Data on the CD-ROM are stored in a track as a sequence of sectors. As shown in the
+Figure 5.14 each sector has four fields viz. sync, header, user data followed by error
+correcting codes. Each part of the sector is described below:
+
+    •    Sync: It is the first field in every sector. The sync field is 12 byte long. The
+         first byte of sync field contains a sequence of 0s followed by 10 bytes of all 1s
+         and 1 byte of all 0s.
+
+    •    Header: Header is four byte field in the sector. Three bytes are used to
+         represent the sector address and one byte is used to represent the mode i.e.
+         how subsequent fields in the sector are going to use. There are 3 modes:
+
+         •   Mode Zero: Specifies a no user data i.e. blank data field.
+         •   Mode One: Specifies an user data of 2048 bytes followed by 288 bytes of
+             error correcting code.
+         •   Mode Two: No error correcting code will be used thus subsequent field
+             will contain 2336 bytes of user data.
+
+    •    Data: Data field contains the user 2048 byte of user data when mode is 1 or
+         mode 2.
+
+    •    L-ECC: Layered error correcting code field is 288 byte long field which is
+         used for error detection and correction in mode 1. In mode 2, this field is used
+         to carry an additional 288 bytes of user data.
+
+Compact Disk Recordable (CD-R)
+CD-Recordable are the compact disks which are capable of storing any type of digital
+data. The physical structure of CD-R is same as that of CD-ROM as discussed in
+previous section except that polycarbonate disk has a very thin layer of an organic dye
+before the Aluminum coating. CD- R can record user data only once but user can read
+the data many times thus these are also known as CD-WO (write once), or WORM
+(write once read many). Many CD writers allow the users to write CD-R in multiple
+session until CD is full. In each writing session, a partition is created in the CD- R.
+But once written, data on CD-R cannot be changed or deleted. There are three types of
+organic dyes used in CD-R.
+Cyanine dyes are the most sensitive dye amongst the three types. CD-Rs have cyanine
+dyes are green in color. Very sensitive to UV rays and even can lose the data if
+exposed to direct sunlight for few days.
+Phthalocyanine dye does not need a stabilizer as compared to cyanine dyes. They are
+silver, gold or light green in color. They are very less sensitive as compared to cyanine
+dyes but if exposed to direct sunlight for few weeks, it may lose the data.
+Azo dye is the most stable among all types. It is most resistant to UV rays but if
+exposed to direct sunlight for 3-4 weeks, the CD -R may lose the data.
+                                                                                                                 19
+Basic Computer Organisation   Compact Disk Rewritable (CD-RW)
+                              The CD-RW are re-writable optical disks. The data on CD-RW can be read or written
+                              multiple times. But for writing again on the already written CD-RW, the disk data
+                              must be erased first. There are two approaches of erasing the data written on CD-RW.
+                              In the first approach, the entire disk data is erased completely i.e. all traces of any
+                              previous data is erased. This is called full blanking. Whereas in another approach
+                              called as fast blanking, only the meta data is erased. The later approach is faster and
+                              allows rewriting the disk. The first approach is used for confidentiality purposes.
+                              The phase change technology is used in CD-RW. The phase change disk uses a
+                              material that has significantly different reflectivity in two different phase states. There
+                              is an amorphous state, in which the molecules exhibit a random orientation and which
+                              reflects light poorly; and a crystalline state, which has a smooth surface that reflects
+                              light well. A beam of laser light can change the material from one phase to the other.
+                              The phase change technology of CD-RW uses a 15-25 % degree of reflection whereas
+                              CD-R works on 40-70 % degree of reflection.
+
+                              Digital Versatile Disk (DVD)
+                              Digital versatile disk commonly known as DVD is also an optical storage device like
+                              CD, CD-R, CD-WR. Among the three DVDs have highest storage capacity ranges
+                              from 1.4 GB to 17 GB on a single side. The higher storage capacity is enabled by the
+                              use of laser beams of shorter wavelength as compared to compact disks. DVD uses a
+                              laser beam of 650 nm whereas compact disk uses a laser beam of 780 nm. Shorter
+                              wavelength laser beam creates shorter pits on the polycarbonate disk, thus offers
+                              higher storage capacity for similar dimensions. DVD-Audio and DVD-video are a
+                              standard format for recording audio and video data on DVDs. Like compact disks,
+                              DVD also comes in various variants like DVD-ROM, DVD-R, DVD-WR etc.
+
+                              Blue Ray Disk
+                              A blue ray disk is a digital disk that can store several hours high definition videos.
+                              Blue ray disks is of the same size of DVD, but can store 25 GB to 128 GB of data. A
+                              blue ray disk is designed to replace DVD technology. It has its applications in gaming
+                              applications, which uses very high quality animations.
+
+                              5.4.3    Charge-coupled Devices, Bubble Memories and Solid State
+                                       Devices
+                              Charge-coupled Devices CCDs (CCDs)
+                              Charge couple devices are photo sensitive devices which are used to store digital data.
+                              CCD is an integrated circuit of MOS-capacitors called cells, which are arranged in an
+                              array like structure in which each cell is connected with its neighbouring cell. Each
+                              capacitor can hold the charge which is used to represent the logic “1”. While reading
+                              the array of capacitors, the capacitor moves its charge to the neighbouring capacitor
+                              with next clock pulse. CCD arrays are mainly used in representing images and video
+                              data, where presence and absence of charge in the capacitor represents the
+                              corresponding pixel intensity.
+                              As mentioned, CCD are highly photo-sensitive in nature and thus, produces a good
+                              quality picture even if light is dim or in low illumination intensity. Now a days, CCDs
+                              are widely used in digital cameras, satellite imagery, radar images and other high
+                              resolution imagery applications.
+
+                              Magnetic Bubble Memories
+                              Working principle of magnetic bubble memory is similar to that of charge coupled
+                              devices (CCD) discussed in the previous section. Magnetic bubble memory is an
+    20
+arrangement of small magnetic area called bubble on a series of parallel track made of     The Memory System
+magnetic material. Each bubble represents a binary “1” and absence of a bubble on
+magnetic material is interpreted as “0”. Binary data is read from the memory by
+moving these bubbles towards the edge of a track under the influence of external
+magnetic field. Magnetic field produces as bubbles remain persistent and do not
+demagnetise by its own. So, magnetic bubble memories are non-volatile type
+memories.
+
+Solid State Devices (SSD)
+
+Solid state drives also known as solid state storage devices are based on flash memory.
+As discussed, flash memory, a non-volatile type memory uses semiconductor devices
+to store the data. The major advantage of SSD is that it is purely an electronic device
+i.e. unlike HDD, SSD does not have mechanical read/ write head other mechanical
+components. Hence, reading and writing through SSD is faster than HDD. Now a
+days, SSD have replaced HDD in computer systems, however, SSD disks are more
+expensive than HDDs.
+
+
+Check Your Progress 2
+1.   What will be the storage capacity of a disk, which has 8 recording surfaces, 32
+     tracks with each track having 64 sectors. Also, what would be the size of one
+     cylinder of the disk? You may assume that each sector can store 1 MB data.
+     ……………………………………………………………………………………
+
+     ……………………………………………………………………………………
+2.   What would be the rotation latency time for the disk specified above, if it has a
+     rotational speed of 6000 rpm?
+     ……………………………………………………………………………………
+
+     ……………………………………………………………………………………
+
+3.   What are the advantages and disadvantages of using SSD over HDD?
+     ………………………………………………………………………………………………
+
+     ………………………………………………………………………………
+
+4. What are the differences between CLV and CAV disks?
+     ……………………………………………………………………………………...
+     ……………………………………………………………………………………...
+
+
+5.5 RAID AND ITS LEVELS
+Continuous efforts have been made by researchers to enhance the performance of the
+secondary storage devices. As pointed out in previous sections performance of the
+secondary storage is inversely affected by disk access time. Lower the disk access
+time higher would be the performance. What about an idea of providing parallel
+access to a group of disks? With the use of parallel access the amount of data that can
+be accessed per unit time can be enhanced by a significant factor. A mechanism which
+splits the data on multiple disk is known as data striping. Data access through parallel
+access allows users to access data stored at multiple disks simultaneously, thus
+reduces effective reading time. Does data striping ensure protection of data against
+disk failure?
+
+                                                                                                               21
+Basic Computer Organisation         Another important factor for secondary storage is the reliability of data storage
+                                    system. Storing same data on more than one disks enhances reliability. If one disk
+                                    fails, then data can be accessed through another disk. Replicating data on multiple
+                                    disks is called mirroring. Mirroring brings redundancy in data. So many schemes have
+                                    been employed to enhance the performance and reliability of data and collectively
+                                    they are called as redundant arrays of inexpensive disks (RAID). Based on the trade-
+                                    off between reliability and performance RAID schemes have been categorises into
+                                    various RAID levels.
+                                    Data striping increases the data transfer speed as different data bytes are accessed in
+                                    parallel from different disks in a single disk access time. Whereas mirroring protects
+                                    data from disk failures. If one disk fails then same data is accessed from the copy of
+                                    the data stored in other disk.
+
+                                    RAID Levels
+
+                                    RAID Level-0: RAID level-0 implements block splitting of data with no protection
+                                    against disk failures. In block splitting, each block is stored in a different disk in the
+                                    array. For example, ith block of a file will be store in ( i mod n ) + 1 disk, where n is
+                                    the total number of disks in the array. In this case, a significant enhancement on the
+                                    performance can be observed as n blocks can be accessed (one each from each disk) in
+                                    a single disk access time.
+
+
+
+
+                                                                      (a) RAID Level 0
+                                    RAID Level-1: This level protects data by implementing mirroring. If a system has 2
+                                    disks then each block of information will be stored in both of the disks. This ensures,
+                                    if one disk fails then same copy of the block is accessed from the second disk.
+                                    Mirroring introduces redundancy unlike level-0 which increases the data transfer rate.
+
+
+              Strip 0         Strip 1        Strip 2        Strip 3          Strip 0     Strip 1        Strip 2       Strip 3
+              Strip 4         Strip 5        Strip 6        Strip 7          Strip 4     Strip 5        Strip 6       Strip 7
+              Strip 8         Strip 9        Strip 10      Strip 11          Strip 8     Strip 9       Strip 10       Strip 11
+
+              Strip 12        Strip 3        Strip 14      Strip 15         Strip 12     Strip 13      Strip 14       Strip 15
+
+
+
+
+                                                    (b) RAID Level 1
+                                    RAID Level-2: This level uses error detection and correction bits, which are extra bits
+                                    used for detection and correction of a single bit error in a byte. This is why this level
+                                    is also known as memory-style error correction code organization. If one of the disk
+                                    fails then parity bits and remaining bits of the byte are used to recover the bit value.
+
+
+
+
+    22
+                                                                                                        The Memory System
+
+
+
+
+                 b0         b1          b2          b3               f0(b)              f1(b)   f2(b)
+
+
+
+
+                         (c) RAID 2 (Redundancy through Hamming Code)
+RAID Level-3: Single parity disk is used in this scheme. Parity bit for a sector is
+computed and stored in a parity disk. During the access, parity bit of the sector is
+computed and if computed parity bit is equal to the stored parity, the missing bit is 0
+otherwise it is 1. This RAID level is also known as bit-interleaved parity organization.
+Thus has an advantage over level-2 that only single parity disk is used as compare to
+number of parity disks in level-2. The biggest drawback of this approach is that all the
+disks are used for single I/O operation in computation of the parity bit which slows
+down the disk access and also restricts parallel access.
+
+
+
+
+           b0          b1          b2          b3               Parity(b)
+
+
+
+
+                      (d) RAID Level 3
+
+RAID Level-4: This level uses block striping and one disk is used to keep parity
+block. This is also called block-interleaved parity organization. The advantage of
+block interleaving is that parity block along with corresponding blocks on other disks
+is used to retrieve the damaged block or the blocks of the failed disk. Unlike in level-
+3, block access reads one disk which allows parallel access to other blocks stored in
+other disks in the array.
+
+
+
+       Block 0        Block 1        Block 2         Block 3            Parity (1-3)
+
+       Block 4        Block 5        Block 6         Block 7            Parity (4-7)
+
+       Block 8        Block 9       Block 10         Block 11           Parity (8-11)
+
+      Block 12        Block 13      Block 14         Block 15           Parity (12-15
+
+
+
+
+        (e) RAID 4 (Block level Parity)
+
+
+
+                                                                                                                            23
+Basic Computer Organisation   RAID Level-5: This level stores block of data and parity in all the disks in the array.
+                              One disk store the parity while data is spread out on different disks in the array. This
+                              structure is also known as block-interleaved distributed parity.
+
+                                        Block 0               Block 1                   Block 2                Block 3                  Parity (0-3)
+
+                                        Block 4               Block 5                   Block 6             Parity (4-7)                 Block 7
+
+                                        Block 8               Block 9              Parity (8-11)               Block 10                  Block 11
+
+                                       Block 12             Parity (12-15)          Block 13                   Block 14                  Block 15
+
+                                      Parity (16-19)         Block 16               Block 17                   Block 18                  Block 19
+
+
+
+
+                                         (f) RAID 5 (Block-level Distributed Parity)
+                              RAID Level-6: Level-6 uses error correcting codes for recovery of damaged data
+                              while other levels uses parity. It also provides protection against multiple disks
+                              failures. For the recovery purposes, this arrangement is used to store redundant data
+                              on some of the disks, hence it is also called as p + q redundancy scheme. Here, p is the
+                              number of disks that store the error correcting codes while q is the number of disks
+                              that store redundant data.
+
+
+
+
+                                     Block 0            Block 1               Block 2               Block 3              Parity (0-3)         Parity (0-3)
+
+                                     Block 4            Block 5               Block 6              Parity (4-7)            Q (4-7)              Block 7
+
+                                     Block 8            Block 9              P (8-11)               Q (8-11)              Block 10             Block 11
+
+                                     Parity 12         Parity (12-           Q (12-15)              Block 13              Block 14             Block 15
+                                                       15)
+
+
+
+
+                                    (g) RAID Level 6
+
+
+                               Table below summarises characteristics of various RAID levels.
+                                                                                I/O       Data
+                                                                             Request Transfer
+                              RAID                                                                                                                      Typical
+                                        Category        Features                Rate      Rate
+                              Level                                                                                                                    Application
+                                                                               (Read     (Read
+                                                                              /write)   /write)
+                                                                                                                                                 Applications
+                                                              a) The disk is divided                      Large                Small             which     requires
+                                0        Striping             into blocks or sectors.                    Blocks:              Blocks:            high performance
+                                                              b) Non-redundant.                         Excellent            Excellent           for   non-critical
+                                                                                                                                                 data
+                                                              a) Mirror disk which
+                                                              contains the same data
+                                                              is associated with every
+                                                              disk.                                       Good /                                 May be used for
+                                1        Mirroring                                                                            Fair /fair
+                                                              b) Data Recovery is                          fair                                  critical files
+                                                              simple. On failure, data
+                                                              is recovered from the
+                                                              mirror disk.
+
+
+
+
+    24
+                      a) All member disks                                                        The Memory System
+                      participate in every I/O
+                      request.
+                      b) Synchronizes the
+                      spindles of all the disks
+                      to the same position.                                Not useful     for
+        Parallel
+ 2                    c) The blocks are very        Poor       Excellent   commercial
+        Access
+                      small in size (Byte or                               purposes.
+                      word).
+                      d) Hamming code is
+                      used to detect double-
+                      bit errors and correct
+                      single-bit error.
+                      a) Parallel access as in
+                      level 2, with small data
+                                                                           Large I/O request
+                      blocks.
+        Parallel                                                           size application,
+ 3                    b) A simple parity bit is     Poor       Excellent
+        Access                                                             such as imaging
+                      computed for the set of
+                                                                           CAD
+                      data       for      error
+                      correction.
+                      a) Each member disk
+                      operates independently,
+                      which enables multiple
+                      input/output requests in
+                      parallel.                                            Not useful     for
+        Independent                               Excellent/    Fair /
+ 4                    b) Block is large and                                commercial
+        access                                      fair        poor
+                      parity strip is created                              purposes.
+                      for bits of blocks of
+                      each disk.
+                      c) Parity strip is stored
+                      on a separate disk.
+                      a) Allows independent
+                      access as in level 4.
+                      b) Parity strips are
+                      distributed across all                               High request rate
+        Independent                               Excellent     Fair /
+ 5                    disks.                                               read     intensive,
+        access                                      / fair      poor
+                      b) Distribution avoids                               data lookup
+                      potential input/output
+                      bottleneck found in
+                      level 4.
+                      Also called the p+q
+                      redundancy scheme, is
+                                                                           Application
+                      much like level 5, but
+        Independent                               Excellent/    Fair /     requiring
+ 6                    stores extra redundant
+        access                                      poor        poor       extremely    high
+                      information to guard
+                                                                           availability
+                      against multiple disk
+                      failures.
+
+
+
+
+Check Your Progress 3
+1.   What is the need of RAID?
+     ……………………………………………………………………………………
+
+     ……………………………………………………………………………………
+
+
+2.   Which RAID levels provide good data transfer rate?
+     ……………………………………………………………………………………
+                                                                                                                     25
+Basic Computer Organisation        ……………………………………………………………………………………
+                              3.   Which RAID level is able to fulfil large number of I/O requests?
+                                   ……………………………………………………………………………………
+
+                                   ……………………………………………………………………………………
+
+
+
+                              5.6 SUMMARY
+
+                              This unit introduces the concept of memory hierarchy, which is primarily required due
+                              to the high cost per bit of high speed memory. The processing unit have register,
+                              cache, main memory and secondary or auxiliary memory. The main memory consists
+                              of RAM or ROM. This unit explains the logic circuit and organisation of RAM and
+                              ROM. The unit also explains several different types of secondary storage memories.
+                              The unit provide details on hard disk and its characteristics. It also gives details of
+                              different kind of optical disk. The concept of access time and constant linear and
+                              angular velocity has also been explained in details. For larger computer systems
+                              simple hard disk is not sufficient, rather an array of disks called RAID are used for
+                              such systems to provide good performance and reliability. The concept of RAID and
+                              various levels of RAID has been defined in this unit. The next unit will introduce you
+                              to the concept of high speed memories.
+
+
+                              5.7 ANSWERS
+
+                              Check Your Progress 1
+                              1. RAM is a sequential circuit, volatile, requires refreshing (DRAM) and is a read/
+                                 write memory; ROM, PROM and EPROM are mostly non-volatile memories.
+                                 ROM is a combinational circuits. All these ROMs are written mostly once and
+                                 read many times.
+                              2 Flash memory is a non-volatile semiconductor memory, where a section of the
+                                 memory or a set of memory words can be erased. They are portable and
+                                 mechanically robust as there is no mechanical movement in the memory to read-
+                                 write data. Flash memory is used in USB memory, SD and micro SD memory
+                                 cards used in cameras and mobile phones respectively.
+                              3. (a) Since a word of data is 16 bits, it will have 16 data input and 16 data output
+                                      lines, if not multiplexed.
+                                  (b) The number of words are 16K, which is 214. Thus, 14 address lines would be
+                                      required.
+                              4. The memory must select one of the 4K bytes, which is 212. In case a square array
+                                  is used (as shown in Figure 5.6), then 6 row address and 6 column address lines
+                                  would be needed, which can be multiplexed. So just 6 address lines be sufficient.
+                                  However, for a non square memory you may require all 12 address lines.
+                              5. Two chips will be required to make 256  8 memory. 4 such combinations would
+                                 be required to make 1 MB memory. Thus, you will require 8 such chips.
+                              Check Your Progress 2
+                              1.   Storage capacity of a disk = recording surfaces × tracks per surface × sectors per
+                                                                 track × size of each sector
+                                   Storage capacity of a disk = 8× 32 × 64 × 1 MB = 23×25×26×220 = 234 = 16 GB
+                                   One cylinder will have = = 8× 64 × 1 MB = 23×26×220 = 512 MB
+
+    26
+2.   The time of one rotation = 1/6000 min = 60/6000 sec = 1/100 sec= 10 millisec        The Memory System
+     Rotational latency = on an average time of half rotation = 5 ms
+
+
+3.   SSD drives does not require any mechanical rotation, therefore are less prone to
+     failure. In addition, they are much faster than HDD. But they are more expensive
+     than HDD
+
+4. The size of sectors on CLV disks is same on the entire disk, therefore, these disks
+   are rotated a different speed. Density of data is same in all the sectors. In CAV
+   disks the rotation speed is same, thus, sector size is more in the outer tracks.
+   However, reading/writing process, in general, is faster.
+Check Your Progress 3
+1.   RAID are a set of storage devices put together for better performance and
+     reliability. Different kind of RAID levels have different objectives.
+
+2.   Good data transfer rate are provided by RAID level 0, 2 and 3.
+
+3.   Large number of I/O requests are fulfilled by RAID level 0, 1, 4,5 ,6.
+
+
+
+
+                                                                                                             27
+                                                                                           The Memory System

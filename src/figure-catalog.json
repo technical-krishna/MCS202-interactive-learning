@@ -1,0 +1,1984 @@
+[
+  {
+    "id": "b1-p8-1.2-1",
+    "unit": 1,
+    "topicId": "1.2",
+    "topic": "A Brief History",
+    "figure": "1.2",
+    "caption": "Numbers of Transistors per Chip",
+    "page": 8,
+    "model": "scale"
+  },
+  {
+    "id": "b1-p10-1.3-2",
+    "unit": 1,
+    "topicId": "1.3.1",
+    "topic": "The CPU",
+    "figure": "1.3",
+    "caption": "Central processing Unit and its components",
+    "page": 10,
+    "model": "architecture"
+  },
+  {
+    "id": "b1-p14-1.4-3",
+    "unit": 1,
+    "topicId": "1.4",
+    "topic": "How are Instructions Executed?",
+    "figure": "1.4",
+    "caption": "“Instruction and data format of an assumed",
+    "page": 14,
+    "model": "instruction"
+  },
+  {
+    "id": "b1-p15-1.5-4",
+    "unit": 1,
+    "topicId": "1.4",
+    "topic": "How are Instructions Executed?",
+    "figure": "1.5",
+    "caption": "“Central Processing Unit with registers",
+    "page": 15,
+    "model": "state"
+  },
+  {
+    "id": "b1-p16-1.6-5",
+    "unit": 1,
+    "topicId": "1.5",
+    "topic": "Instruction Cycle",
+    "figure": "1.6",
+    "caption": "Instruction Cycle [https://www.javatpoint.com/instruction-cycle].",
+    "page": 16,
+    "model": "pipeline"
+  },
+  {
+    "id": "b1-p16-1.7-6",
+    "unit": 1,
+    "topicId": "1.5",
+    "topic": "Instruction Cycle",
+    "figure": "1.7",
+    "caption": "Example of Interrupts in a Computer.",
+    "page": 16,
+    "model": "pipeline"
+  },
+  {
+    "id": "b1-p17-1.8-7",
+    "unit": 1,
+    "topicId": "1.5",
+    "topic": "Instruction Cycle",
+    "figure": "1.8",
+    "caption": "“Instruction Cycle with Interrupt Cycle",
+    "page": 17,
+    "model": "pipeline"
+  },
+  {
+    "id": "b1-p19-1.9-8",
+    "unit": 1,
+    "topicId": "1.6.1",
+    "topic": "von Neumann Architecture",
+    "figure": "1.9",
+    "caption": "Von Neumann Machine Ref: www.educba.com",
+    "page": 19,
+    "model": "architecture"
+  },
+  {
+    "id": "b1-p19-1.10-9",
+    "unit": 1,
+    "topicId": "1.6.1",
+    "topic": "von Neumann Architecture",
+    "figure": "1.10",
+    "caption": "Harvard Architecture",
+    "page": 19,
+    "model": "architecture"
+  },
+  {
+    "id": "b1-p20-1.11-10",
+    "unit": 1,
+    "topicId": "1.6.1",
+    "topic": "von Neumann Architecture",
+    "figure": "1.11",
+    "caption": "Princeton (von Neumann) Architecture",
+    "page": 20,
+    "model": "architecture"
+  },
+  {
+    "id": "b1-p21-1.12-11",
+    "unit": 1,
+    "topicId": "1.6.2",
+    "topic": "Harvard Architecture",
+    "figure": "1.12",
+    "caption": "The modified Harvard architecture.",
+    "page": 21,
+    "model": "architecture"
+  },
+  {
+    "id": "b1-p22-1.13-12",
+    "unit": 1,
+    "topicId": "1.6.3",
+    "topic": "Instruction Set Architecture (ISA)",
+    "figure": "1.13",
+    "caption": "The Abstraction Hierarchy",
+    "page": 22,
+    "model": "instruction"
+  },
+  {
+    "id": "b1-p23-1.14-13",
+    "unit": 1,
+    "topicId": "1.6.4",
+    "topic": "RISC",
+    "figure": "1.14",
+    "caption": "RISC vs. CISC",
+    "page": 23,
+    "model": "instruction"
+  },
+  {
+    "id": "b1-p25-1.14-14",
+    "unit": 1,
+    "topicId": "1.6.6",
+    "topic": "Mobile Architecture",
+    "figure": "1.14",
+    "caption": "Block diagram of Mobile System",
+    "page": 25,
+    "model": "architecture",
+    "referenceAliases": [
+      "1.15"
+    ],
+    "referenceNote": "The surrounding course prose calls this Figure 1.15; the diagram itself is printed as Figure 1.14."
+  },
+  {
+    "id": "b1-p62-3.1-15",
+    "unit": 3,
+    "topicId": "3.2",
+    "topic": "Logic Gates",
+    "figure": "3.1",
+    "caption": "Logic Gates",
+    "page": 62,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p63-3.2-16",
+    "unit": 3,
+    "topicId": "3.2",
+    "topic": "Logic Gates",
+    "figure": "3.2",
+    "caption": "Gates and related Boolean algebraic expression.",
+    "page": 63,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p64-3.3-17",
+    "unit": 3,
+    "topicId": "3.2",
+    "topic": "Logic Gates",
+    "figure": "3.3",
+    "caption": "The Rules of Boolean algebra",
+    "page": 64,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p65-3.4-18",
+    "unit": 3,
+    "topicId": "3.4",
+    "topic": "Logic Circuits",
+    "figure": "3.4",
+    "caption": "Truth table & logic diagram for F = A . B + C",
+    "page": 65,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p67-3.5-19",
+    "unit": 3,
+    "topicId": "3.5",
+    "topic": "Combinational Circuits",
+    "figure": "3.5",
+    "caption": "A two level AND-OR combinational circuit",
+    "page": 67,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p68-3.6-20",
+    "unit": 3,
+    "topicId": "3.5.1",
+    "topic": "Canonical and Standard Forms of an Boolean expression.",
+    "figure": "3.6",
+    "caption": "Minterms for two variables",
+    "page": 68,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p68-3.7-21",
+    "unit": 3,
+    "topicId": "3.5.1",
+    "topic": "Canonical and Standard Forms of an Boolean expression.",
+    "figure": "3.7",
+    "caption": "Maxterms for two variables",
+    "page": 68,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p70-3.8-22",
+    "unit": 3,
+    "topicId": "3.5.2",
+    "topic": "Minimization of Gates",
+    "figure": "3.8",
+    "caption": "Simplified logic function using algebraic Simplifications",
+    "page": 70,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p71-3.9-23",
+    "unit": 3,
+    "topicId": "3.5.2",
+    "topic": "Minimization of Gates",
+    "figure": "3.9",
+    "caption": "K-map of 2, 3 and 4 variables",
+    "page": 71,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p71-3.10-24",
+    "unit": 3,
+    "topicId": "3.5.2",
+    "topic": "Minimization of Gates",
+    "figure": "3.10",
+    "caption": "Truth table & K-Map of Function F =  (0, 2, 8, 9, 10, 11, 15)",
+    "page": 71,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p74-3.11-25",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.11",
+    "caption": "NOT Operation using NAND or NOR gates",
+    "page": 74,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p74-3.12-26",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.12",
+    "caption": "Logic circuit of AND Operation using NAND gates",
+    "page": 74,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p74-3.13-27",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.13",
+    "caption": "Logic circuit of AND Operation using NOR gates",
+    "page": 74,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p75-3.14-28",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.14",
+    "caption": "Logic circuit of OR Operation using NAND gates",
+    "page": 75,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p75-3.15-29",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.15",
+    "caption": "Logic circuit of OR Operation using NOR gates",
+    "page": 75,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p75-3.16-30",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.16",
+    "caption": "Logic Circuit Using AND-OR gate",
+    "page": 75,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p76-3.17-31",
+    "unit": 3,
+    "topicId": "3.6",
+    "topic": "Design of Combinational Circuits",
+    "figure": "3.17",
+    "caption": "Logic Circuit by Replacing AND - OR circuit by NAND gates",
+    "page": 76,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p77-3.18-32",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.18",
+    "caption": "Truth table and K-maps for half adder",
+    "page": 77,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p77-3.19-33",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.19",
+    "caption": "The half adder circuit-input addend bits a, b; output sum bit (s) and",
+    "page": 77,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p78-3.20-34",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.20",
+    "caption": "The Truth Table for Full Adder",
+    "page": 78,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p78-3.21-35",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.21",
+    "caption": "The K-maps for Full Adder",
+    "page": 78,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p79-3.22-36",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.22",
+    "caption": "Full Adder",
+    "page": 79,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p79-3.23-37",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.23",
+    "caption": "Addition of a 4 bit number using 4 full adders",
+    "page": 79,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p79-3.24-38",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.24",
+    "caption": "Truth table for Full adder (bit 1)",
+    "page": 79,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p80-3.24-39",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.24",
+    "caption": "K-map for c1 output of Full adder (bit 1)",
+    "page": 80,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p80-3.25-40",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.25",
+    "caption": "Adder Subtractor circuit using full adders for",
+    "page": 80,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p81-3.26-41",
+    "unit": 3,
+    "topicId": "3.7.1",
+    "topic": "Adders",
+    "figure": "3.26",
+    "caption": "Use of Mode bit to control b input in Adder subtractor circuit",
+    "page": 81,
+    "model": "adder"
+  },
+  {
+    "id": "b1-p81-3.27-42",
+    "unit": 3,
+    "topicId": "3.7.2",
+    "topic": "Decoders",
+    "figure": "3.27",
+    "caption": "2 × 4 decoder",
+    "page": 81,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p82-3.28-43",
+    "unit": 3,
+    "topicId": "3.7.3",
+    "topic": "Multiplexer",
+    "figure": "3.28",
+    "caption": "4 × 1 Multiplexer",
+    "page": 82,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p83-3.29-44",
+    "unit": 3,
+    "topicId": "3.7.4",
+    "topic": "Encoder",
+    "figure": "3.29",
+    "caption": "Truth Table of 4 × 2 encoder",
+    "page": 83,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p83-3.30-45",
+    "unit": 3,
+    "topicId": "3.7.4",
+    "topic": "Encoder",
+    "figure": "3.30",
+    "caption": "Logic Diagram of a simple encoder",
+    "page": 83,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p83-3.31-46",
+    "unit": 3,
+    "topicId": "3.7.5",
+    "topic": "Programmable Logic Array",
+    "figure": "3.31",
+    "caption": "Programmable Logic Array",
+    "page": 83,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p84-3.32-47",
+    "unit": 3,
+    "topicId": "3.7.6",
+    "topic": "Read Only Memory ROM",
+    "figure": "3.32",
+    "caption": "ROM Design",
+    "page": 84,
+    "model": "memory"
+  },
+  {
+    "id": "b1-p91-4.1-48",
+    "unit": 4,
+    "topicId": "4.2",
+    "topic": "Sequential Circuits: The Definition",
+    "figure": "4.1",
+    "caption": "Block Diagram of sequential circuits.",
+    "page": 91,
+    "model": "state"
+  },
+  {
+    "id": "b1-p91-4.2-49",
+    "unit": 4,
+    "topicId": "4.2",
+    "topic": "Sequential Circuits: The Definition",
+    "figure": "4.2",
+    "caption": "Clock signals of clock pulse generator",
+    "page": 91,
+    "model": "pipeline"
+  },
+  {
+    "id": "b1-p92-4.3-50",
+    "unit": 4,
+    "topicId": "4.3.1",
+    "topic": "Latches",
+    "figure": "4.3",
+    "caption": "SR Latch using NOR gates",
+    "page": 92,
+    "model": "logic"
+  },
+  {
+    "id": "b1-p93-4.4-51",
+    "unit": 4,
+    "topicId": "4.3.1",
+    "topic": "Latches",
+    "figure": "4.4",
+    "caption": "R-S latch with clock.",
+    "page": 93,
+    "model": "state"
+  },
+  {
+    "id": "b1-p94-4.5-52",
+    "unit": 4,
+    "topicId": "4.3.1",
+    "topic": "Latches",
+    "figure": "4.5",
+    "caption": "D latch with clock",
+    "page": 94,
+    "model": "state"
+  },
+  {
+    "id": "b1-p94-4.6-53",
+    "unit": 4,
+    "topicId": "4.3.2",
+    "topic": "Flip-Flop",
+    "figure": "4.6",
+    "caption": "Graphical Symbols of basic Flip-Flops",
+    "page": 94,
+    "model": "state"
+  },
+  {
+    "id": "b1-p95-4.7-54",
+    "unit": 4,
+    "topicId": "4.3.2",
+    "topic": "Flip-Flop",
+    "figure": "4.7",
+    "caption": "Characteristic Table for flip-flops",
+    "page": 95,
+    "model": "state"
+  },
+  {
+    "id": "b1-p95-4.8-55",
+    "unit": 4,
+    "topicId": "4.3.3",
+    "topic": "Excitation Tables",
+    "figure": "4.8",
+    "caption": "Excitation Tables for basic flip-flops",
+    "page": 95,
+    "model": "state"
+  },
+  {
+    "id": "b1-p97-4.9-56",
+    "unit": 4,
+    "topicId": "4.3.4",
+    "topic": "Master Slave Flip Flops",
+    "figure": "4.9",
+    "caption": "Master – Slave flip- flop",
+    "page": 97,
+    "model": "state"
+  },
+  {
+    "id": "b1-p97-4.10-57",
+    "unit": 4,
+    "topicId": "4.3.5",
+    "topic": "Edge Triggered Flip-flops",
+    "figure": "4.10",
+    "caption": "Clock Pulse Signal",
+    "page": 97,
+    "model": "pipeline"
+  },
+  {
+    "id": "b1-p98-4.11-58",
+    "unit": 4,
+    "topicId": "4.3.5",
+    "topic": "Edge Triggered Flip-flops",
+    "figure": "4.11",
+    "caption": "Edge triggered and master slave D flip-flop",
+    "page": 98,
+    "model": "state"
+  },
+  {
+    "id": "b1-p100-4.12-59",
+    "unit": 4,
+    "topicId": "4.4",
+    "topic": "Sequential Circuit Design",
+    "figure": "4.12",
+    "caption": "2-bit counter",
+    "page": 100,
+    "model": "state"
+  },
+  {
+    "id": "b1-p101-4.13-60",
+    "unit": 4,
+    "topicId": "4.5.1",
+    "topic": "Registers",
+    "figure": "4.13",
+    "caption": "A register with parallel load.",
+    "page": 101,
+    "model": "state"
+  },
+  {
+    "id": "b1-p102-4.14-61",
+    "unit": 4,
+    "topicId": "4.5.1",
+    "topic": "Registers",
+    "figure": "4.14",
+    "caption": "4-bit Right Shift Register",
+    "page": 102,
+    "model": "state"
+  },
+  {
+    "id": "b1-p104-4.16-62",
+    "unit": 4,
+    "topicId": "4.5.3",
+    "topic": "Synchronous Counters",
+    "figure": "4.16",
+    "caption": "Synchronous Counter",
+    "page": 104,
+    "model": "state"
+  },
+  {
+    "id": "b1-p105-4.17-63",
+    "unit": 4,
+    "topicId": "4.5.4",
+    "topic": "Random Access Memory",
+    "figure": "4.17",
+    "caption": "Binary Cell",
+    "page": 105,
+    "model": "memory",
+    "referenceAliases": [
+      "4.21"
+    ],
+    "referenceNote": "The surrounding course prose calls this Figure 4.21; the binary-cell diagram itself is printed as Figure 4.17."
+  },
+  {
+    "id": "b1-p106-4.18-64",
+    "unit": 4,
+    "topicId": "4.5.4",
+    "topic": "Random Access Memory",
+    "figure": "4.18",
+    "caption": "Two-dimensional Array based 4  2 RAM",
+    "page": 106,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p5-5.1-65",
+    "unit": 5,
+    "topicId": "5.2",
+    "topic": "The Memory Hierarchy",
+    "figure": "5.1",
+    "caption": "Memory Interaction with CPU",
+    "page": 5,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p6-5.2-66",
+    "unit": 5,
+    "topicId": "5.2",
+    "topic": "The Memory Hierarchy",
+    "figure": "5.2",
+    "caption": "Memory Hierarchy",
+    "page": 6,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p7-5.3-67",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.3",
+    "caption": "Logic Diagram of RAM cell",
+    "page": 7,
+    "model": "logic"
+  },
+  {
+    "id": "b2-p7-5.4-68",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.4",
+    "caption": "Block Diagram of 2mx n RAM",
+    "page": 7,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p8-5.5-69",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.5",
+    "caption": "A DRAM cell",
+    "page": 8,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p8-5.6-70",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.6",
+    "caption": "Block Diagram of DRAM",
+    "page": 8,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p9-5.7-71",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.7",
+    "caption": "Block Diagram of 2mx n ROM",
+    "page": 9,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p10-5.8-72",
+    "unit": 5,
+    "topicId": "5.3",
+    "topic": "SRAM, DRAM, ROM, Flash Memory",
+    "figure": "5.8",
+    "caption": "Internal diagram of 32x8 ROM",
+    "page": 10,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p13-5.8-73",
+    "unit": 5,
+    "topicId": "5.4.1",
+    "topic": "Hard Disk Drives",
+    "figure": "5.8",
+    "caption": "Internal structure of Hard disk drives (HDD)",
+    "page": 13,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p13-5.9-74",
+    "unit": 5,
+    "topicId": "5.4.1",
+    "topic": "Hard Disk Drives",
+    "figure": "5.9",
+    "caption": "Read/ Write Head",
+    "page": 13,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p15-5.10-75",
+    "unit": 5,
+    "topicId": "5.4.1",
+    "topic": "Hard Disk Drives",
+    "figure": "5.10",
+    "caption": "Magnetic Disk Structure of CAV",
+    "page": 15,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p17-5.11-76",
+    "unit": 5,
+    "topicId": "5.4.2",
+    "topic": "Optical Memories",
+    "figure": "5.11",
+    "caption": "Outer Layout of a CD",
+    "page": 17,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p17-5.12-77",
+    "unit": 5,
+    "topicId": "5.4.2",
+    "topic": "Optical Memories",
+    "figure": "5.12",
+    "caption": "Spiral track of CD",
+    "page": 17,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p17-5.13-78",
+    "unit": 5,
+    "topicId": "5.4.2",
+    "topic": "Optical Memories",
+    "figure": "5.13",
+    "caption": "Land & Pit formation in CD track",
+    "page": 17,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p18-5.14-79",
+    "unit": 5,
+    "topicId": "5.4.2",
+    "topic": "Optical Memories",
+    "figure": "5.14",
+    "caption": "Sector format of CD",
+    "page": 18,
+    "model": "storage"
+  },
+  {
+    "id": "b2-p28-6.1-80",
+    "unit": 6,
+    "topicId": "6.2",
+    "topic": "Locality of Reference",
+    "figure": "6.1",
+    "caption": "Loop structure",
+    "page": 28,
+    "model": "pipeline"
+  },
+  {
+    "id": "b2-p29-6.2-81",
+    "unit": 6,
+    "topicId": "6.3",
+    "topic": "Cache Memory",
+    "figure": "6.2",
+    "caption": "Cache Memory",
+    "page": 29,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p32-6.3-82",
+    "unit": 6,
+    "topicId": "6.4.1",
+    "topic": "Issues of Cache Design",
+    "figure": "6.3",
+    "caption": "Structure of Cache and Main Memory",
+    "page": 32,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p33-6.4-83",
+    "unit": 6,
+    "topicId": "6.4.1",
+    "topic": "Issues of Cache Design",
+    "figure": "6.4",
+    "caption": "Example of Cache and Main Memory",
+    "page": 33,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p34-6.5-84",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.5",
+    "caption": "Main Memory address to Cache address mapping in Direct",
+    "page": 34,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p34-6.6-85",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.6",
+    "caption": "Direct Cache mapping",
+    "page": 34,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p35-6.7-86",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.7",
+    "caption": "Direct Cache mapping example",
+    "page": 35,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p36-6.8-87",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.8",
+    "caption": "Associative mapping",
+    "page": 36,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p36-6.8-88",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.8",
+    "caption": "Set Associative mapping",
+    "page": 36,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p37-6.9-89",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.9",
+    "caption": "An example of Main Memory Blocks",
+    "page": 37,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p38-6.10-90",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.10",
+    "caption": "An example Cache memory with Direct mapping",
+    "page": 38,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p39-6.11-91",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.11",
+    "caption": "An example Cache memory with Associative mapping",
+    "page": 39,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p40-6.12-92",
+    "unit": 6,
+    "topicId": "6.4.2",
+    "topic": "Cache Mapping",
+    "figure": "6.12",
+    "caption": "An example Cache memory with Set Associative mapping",
+    "page": 40,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p42-6.13-93",
+    "unit": 6,
+    "topicId": "6.5",
+    "topic": "Associative Memory",
+    "figure": "6.13",
+    "caption": "Address mapping for Memory interleaving",
+    "page": 42,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p42-6.14-94",
+    "unit": 6,
+    "topicId": "6.5",
+    "topic": "Associative Memory",
+    "figure": "6.14",
+    "caption": "Example of Memory interleaving",
+    "page": 42,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p44-6.15-95",
+    "unit": 6,
+    "topicId": "6.6",
+    "topic": "Interleaved Memory",
+    "figure": "6.15",
+    "caption": "Block diagram of associative memory",
+    "page": 44,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p44-6.16-96",
+    "unit": 6,
+    "topicId": "6.6",
+    "topic": "Interleaved Memory",
+    "figure": "6.16",
+    "caption": "An Example of Associative matching",
+    "page": 44,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p45-6.17-97",
+    "unit": 6,
+    "topicId": "6.7",
+    "topic": "Virtual Memory",
+    "figure": "6.17",
+    "caption": "Virtual Address Mapping to Physical Address",
+    "page": 45,
+    "model": "memory"
+  },
+  {
+    "id": "b2-p49-7.1-98",
+    "unit": 7,
+    "topicId": "7.2",
+    "topic": "Input/Output (I/O) Devices",
+    "figure": "7.1",
+    "caption": "A Typical Microcomputer System’s Block Diagram",
+    "page": 49,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p50-7.2-99",
+    "unit": 7,
+    "topicId": "7.3",
+    "topic": "The Input/Output (I/O) Interface",
+    "figure": "7.2",
+    "caption": "A Block Diagram of an I/OInterface connectingwith Processor and External Devices",
+    "page": 50,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p51-7.3-100",
+    "unit": 7,
+    "topicId": "7.3",
+    "topic": "The Input/Output (I/O) Interface",
+    "figure": "7.3",
+    "caption": "I/O Interface Unit’s Block Diagram",
+    "page": 51,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p51-7.4-101",
+    "unit": 7,
+    "topicId": "7.3.1",
+    "topic": "System Bus and I/O Interface Modules",
+    "figure": "7.4",
+    "caption": "Communication links between Processor and Peripheral devices",
+    "page": 51,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p53-7.5-102",
+    "unit": 7,
+    "topicId": "7.4",
+    "topic": "Device Controllers",
+    "figure": "7.5",
+    "caption": "Device Controller connecting I/O Devices and Computer System",
+    "page": 53,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p53-7.6-103",
+    "unit": 7,
+    "topicId": "7.4.1",
+    "topic": "Device Controller and I/O Interface",
+    "figure": "7.6",
+    "caption": "Block Diagram of an I/O Interface",
+    "page": 53,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p55-7.7-104",
+    "unit": 7,
+    "topicId": "7.6.1",
+    "topic": "Strobe Control",
+    "figure": "7.7",
+    "caption": "Source Initiated Strobe",
+    "page": 55,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p55-7.8-105",
+    "unit": 7,
+    "topicId": "7.6.1",
+    "topic": "Strobe Control",
+    "figure": "7.8",
+    "caption": "Destination Initiated Strobe",
+    "page": 55,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p56-7.9-106",
+    "unit": 7,
+    "topicId": "7.6.2",
+    "topic": "Handshaking",
+    "figure": "7.9",
+    "caption": "Source Initiated Handshaking",
+    "page": 56,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p56-7.10-107",
+    "unit": 7,
+    "topicId": "7.6.2",
+    "topic": "Handshaking",
+    "figure": "7.10",
+    "caption": "Destination Initiated Handshaking",
+    "page": 56,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p57-7.11-108",
+    "unit": 7,
+    "topicId": "7.7.1",
+    "topic": "Programmed I/O",
+    "figure": "7.11",
+    "caption": "Programmed I/O",
+    "page": 57,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p58-7.12-109",
+    "unit": 7,
+    "topicId": "7.7.2",
+    "topic": "Interrupt-Driven I/O",
+    "figure": "7.12",
+    "caption": "Interrupt Driven I/O",
+    "page": 58,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p59-7.13-110",
+    "unit": 7,
+    "topicId": "7.7.3",
+    "topic": "Interrupt Handling",
+    "figure": "7.13",
+    "caption": "The sequence of steps in Interrupt-Processing",
+    "page": 59,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p60-7.14-111",
+    "unit": 7,
+    "topicId": "7.7.3",
+    "topic": "Interrupt Handling",
+    "figure": "7.14",
+    "caption": "Interrupt occur for instruction at memory location N",
+    "page": 60,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p60-7.15-112",
+    "unit": 7,
+    "topicId": "7.7.3",
+    "topic": "Interrupt Handling",
+    "figure": "7.15",
+    "caption": "Return after handling an Interrupt",
+    "page": 60,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p61-7.16-113",
+    "unit": 7,
+    "topicId": "7.7.4",
+    "topic": "Direct Memory Access (DMA)",
+    "figure": "7.16",
+    "caption": "DMA Technique",
+    "page": 61,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p62-7.17-114",
+    "unit": 7,
+    "topicId": "7.7.4",
+    "topic": "Direct Memory Access (DMA)",
+    "figure": "7.17",
+    "caption": "DMA’s Block Diagram",
+    "page": 62,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p62-7.18-115",
+    "unit": 7,
+    "topicId": "7.7.4",
+    "topic": "Direct Memory Access (DMA)",
+    "figure": "7.18",
+    "caption": "Breakpoints for DMA and Interrupt in an Instruction Cycle",
+    "page": 62,
+    "model": "pipeline"
+  },
+  {
+    "id": "b2-p63-7.19-116",
+    "unit": 7,
+    "topicId": "7.7.4",
+    "topic": "Direct Memory Access (DMA)",
+    "figure": "7.19",
+    "caption": "Three Different DMA Configurations",
+    "page": 63,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p64-7.20-117",
+    "unit": 7,
+    "topicId": "7.8",
+    "topic": "Input Output Processor (IOP)",
+    "figure": "7.20",
+    "caption": "Block Diagram of a Computer System with I/O Processor",
+    "page": 64,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p65-7.21-118",
+    "unit": 7,
+    "topicId": "7.8.1",
+    "topic": "Characteristics of I/O Channels",
+    "figure": "7.21",
+    "caption": "Structures of I/O Channels",
+    "page": 65,
+    "model": "transfer"
+  },
+  {
+    "id": "b2-p70-8.1-119",
+    "unit": 8,
+    "topicId": "8.2.1",
+    "topic": "Classifications of Mice",
+    "figure": "8.1",
+    "caption": "Difference between (a) Mechanical Mouse and (b) Optical Mouse",
+    "page": 70,
+    "model": "device"
+  },
+  {
+    "id": "b2-p70-8.2-120",
+    "unit": 8,
+    "topicId": "8.3",
+    "topic": "Keyboard",
+    "figure": "8.2",
+    "caption": "Overview of how Keyboard transfers data to the computer",
+    "page": 70,
+    "model": "device"
+  },
+  {
+    "id": "b2-p71-8.3-121",
+    "unit": 8,
+    "topicId": "8.3.1",
+    "topic": "Features of Keyboard",
+    "figure": "8.3",
+    "caption": "IBM 101-key Keyboard layout",
+    "page": 71,
+    "model": "device"
+  },
+  {
+    "id": "b2-p72-8.4-122",
+    "unit": 8,
+    "topicId": "8.4.1",
+    "topic": "Cathode Ray Tube",
+    "figure": "8.4",
+    "caption": "Cathode Ray Tube",
+    "page": 72,
+    "model": "device"
+  },
+  {
+    "id": "b2-p73-8.5-123",
+    "unit": 8,
+    "topicId": "8.4.2",
+    "topic": "Liquid Crystal Display",
+    "figure": "8.5",
+    "caption": "Nematic Cells",
+    "page": 73,
+    "model": "device"
+  },
+  {
+    "id": "b2-p73-8.6-124",
+    "unit": 8,
+    "topicId": "8.4.2",
+    "topic": "Liquid Crystal Display",
+    "figure": "8.6",
+    "caption": "TFT LCD Display Technology",
+    "page": 73,
+    "model": "device"
+  },
+  {
+    "id": "b2-p74-8.7-125",
+    "unit": 8,
+    "topicId": "8.4.3",
+    "topic": "Light-Emitting diode",
+    "figure": "8.7",
+    "caption": "Benefits offered by LED monitors",
+    "page": 74,
+    "model": "device"
+  },
+  {
+    "id": "b2-p75-8.8-126",
+    "unit": 8,
+    "topicId": "8.5",
+    "topic": "Video Cards",
+    "figure": "8.8",
+    "caption": "Bit-mapped Graphics Image",
+    "page": 75,
+    "model": "device"
+  },
+  {
+    "id": "b2-p75-8.9-127",
+    "unit": 8,
+    "topicId": "8.5",
+    "topic": "Video Cards",
+    "figure": "8.9",
+    "caption": "Frame Buffer and the corresponding image displayed on the system",
+    "page": 75,
+    "model": "device"
+  },
+  {
+    "id": "b2-p75-8.10-128",
+    "unit": 8,
+    "topicId": "8.5",
+    "topic": "Video Cards",
+    "figure": "8.10",
+    "caption": "Raster Display",
+    "page": 75,
+    "model": "device"
+  },
+  {
+    "id": "b2-p76-8.11-129",
+    "unit": 8,
+    "topicId": "8.5",
+    "topic": "Video Cards",
+    "figure": "8.11",
+    "caption": "Circle with low and high resolutions",
+    "page": 76,
+    "model": "device"
+  },
+  {
+    "id": "b2-p76-8.12-130",
+    "unit": 8,
+    "topicId": "8.5.2",
+    "topic": "Color Depth",
+    "figure": "8.12",
+    "caption": "3-bits Color Display with 3 color planes",
+    "page": 76,
+    "model": "device"
+  },
+  {
+    "id": "b2-p76-8.13-131",
+    "unit": 8,
+    "topicId": "8.5.2",
+    "topic": "Color Depth",
+    "figure": "8.13",
+    "caption": "8 possible colors for 3-bits Color Display",
+    "page": 76,
+    "model": "device"
+  },
+  {
+    "id": "b2-p80-8.14-132",
+    "unit": 8,
+    "topicId": "8.7",
+    "topic": "Digital Camera",
+    "figure": "8.14",
+    "caption": "Working of a Digital Camera",
+    "page": 80,
+    "model": "device"
+  },
+  {
+    "id": "b2-p81-8.15-133",
+    "unit": 8,
+    "topicId": "8.8",
+    "topic": "Voice Based Input Devices",
+    "figure": "8.15",
+    "caption": "(a) Siri (b) Echo Dot 3 Smart Speaker with Alexa",
+    "page": 81,
+    "model": "device"
+  },
+  {
+    "id": "b2-p82-8.16-134",
+    "unit": 8,
+    "topicId": "8.9",
+    "topic": "Printers",
+    "figure": "8.16",
+    "caption": "Classification of Printers",
+    "page": 82,
+    "model": "device"
+  },
+  {
+    "id": "b2-p82-8.17-135",
+    "unit": 8,
+    "topicId": "8.9.1",
+    "topic": "Impact Printers",
+    "figure": "8.17",
+    "caption": "(a) Dot-matrix printer (b) Local Railway ticket",
+    "page": 82,
+    "model": "device"
+  },
+  {
+    "id": "b2-p83-8.18-136",
+    "unit": 8,
+    "topicId": "8.9.2",
+    "topic": "Non-impact Printers",
+    "figure": "8.18",
+    "caption": "Single function Monochrome Laser Printer",
+    "page": 83,
+    "model": "device"
+  },
+  {
+    "id": "b2-p83-8.19-137",
+    "unit": 8,
+    "topicId": "8.10",
+    "topic": "Scanners",
+    "figure": "8.19",
+    "caption": "(a) Flatbed Scanner (b) Handheld Scanner",
+    "page": 83,
+    "model": "device"
+  },
+  {
+    "id": "b2-p84-8.20-138",
+    "unit": 8,
+    "topicId": "8.11",
+    "topic": "Modems",
+    "figure": "8.20",
+    "caption": "Modulation and Demodulation process by Modem",
+    "page": 84,
+    "model": "device"
+  },
+  {
+    "id": "b3-p2-9.1-139",
+    "unit": 9,
+    "topicId": "9.2",
+    "topic": "Instruction Set Characteristics and Design Considerations",
+    "figure": "9.1",
+    "caption": "Instruction format components",
+    "page": 2,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p3-9.1-140",
+    "unit": 9,
+    "topicId": "9.2.1",
+    "topic": "Operand Data Types",
+    "figure": "9.1",
+    "caption": "operand data types",
+    "page": 3,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p8-9.2-141",
+    "unit": 9,
+    "topicId": "9.2.3",
+    "topic": "Stored Program Organization",
+    "figure": "9.2",
+    "caption": "Schematic representation of stored program",
+    "page": 8,
+    "model": "instruction",
+    "referenceAliases": [
+      "9.3"
+    ],
+    "referenceNote": "The surrounding course prose calls this Figure 9.3; the stored-program diagram itself is printed as Figure 9.2."
+  },
+  {
+    "id": "b3-p14-9.4-142",
+    "unit": 9,
+    "topicId": "9.5.3",
+    "topic": "Indirect Addressing",
+    "figure": "9.4",
+    "caption": "Load AC (200)",
+    "page": 14,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p14-9.4-143",
+    "unit": 9,
+    "topicId": "9.5.3",
+    "topic": "Indirect Addressing",
+    "figure": "9.4",
+    "caption": "Schematic representation of Direct and Indirect addressing modes",
+    "page": 14,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p16-9.5-144",
+    "unit": 9,
+    "topicId": "9.5.8",
+    "topic": "Indexed Addressing Scheme",
+    "figure": "9.5",
+    "caption": "An example for addressing modes",
+    "page": 16,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p17-9.6-145",
+    "unit": 9,
+    "topicId": "9.5.9",
+    "topic": "Stack Addressing",
+    "figure": "9.6",
+    "caption": "Stack organization",
+    "page": 17,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p17-9.7-146",
+    "unit": 9,
+    "topicId": "9.5.9",
+    "topic": "Stack Addressing",
+    "figure": "9.7",
+    "caption": "The Example Data",
+    "page": 17,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p24-10.1-147",
+    "unit": 10,
+    "topicId": "10.2.2",
+    "topic": "Status and Control Registers",
+    "figure": "10.1",
+    "caption": "Flags or conditional codes",
+    "page": 24,
+    "model": "state"
+  },
+  {
+    "id": "b3-p26-10.2-148",
+    "unit": 10,
+    "topicId": "10.3.1",
+    "topic": "Register Transfer Language, Bus and Memory Transfers",
+    "figure": "10.2",
+    "caption": "Register Naming and bit ordering",
+    "page": 26,
+    "model": "memory"
+  },
+  {
+    "id": "b3-p33-10.4-149",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.4",
+    "caption": "Fetch cycle",
+    "page": 33,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p33-10.5-150",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.5",
+    "caption": "When Direct Addressing is used: IR (Address) contains the direct",
+    "page": 33,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p33-10.5-151",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.5",
+    "caption": "An Indirect cycle",
+    "page": 33,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p34-10.6-152",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.6",
+    "caption": "Execution cycle of Add instruction",
+    "page": 34,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p34-10.7-153",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.7",
+    "caption": "Execution cycle of increment and skip instruction",
+    "page": 34,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p35-10.8-154",
+    "unit": 10,
+    "topicId": "10.4.2",
+    "topic": "Instruction Cycle",
+    "figure": "10.8",
+    "caption": "Execution cycle of subroutine call instruction",
+    "page": 35,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p35-10.9-155",
+    "unit": 10,
+    "topicId": "10.4.3",
+    "topic": "Interrupt Cycle",
+    "figure": "10.9",
+    "caption": "Interrupt cycle using a stack",
+    "page": 35,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p36-10.10-156",
+    "unit": 10,
+    "topicId": "10.5",
+    "topic": "Instruction Pipelining",
+    "figure": "10.10",
+    "caption": "Instruction Pipeline",
+    "page": 36,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p38-10.11-157",
+    "unit": 10,
+    "topicId": "10.6.1",
+    "topic": "A Simple ALU Organisation",
+    "figure": "10.11",
+    "caption": "Structure of a Fixed-point Arithmetic logic unit",
+    "page": 38,
+    "model": "adder"
+  },
+  {
+    "id": "b3-p40-10.12-158",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.12",
+    "caption": "Implementation of a 2-bit BUS",
+    "page": 40,
+    "model": "architecture"
+  },
+  {
+    "id": "b3-p40-10.13-159",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.13",
+    "caption": "Bus Line Selection",
+    "page": 40,
+    "model": "architecture"
+  },
+  {
+    "id": "b3-p41-10.14-160",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.14",
+    "caption": "A two-bit arithmetic circuit (adder-subtractor)",
+    "page": 41,
+    "model": "adder"
+  },
+  {
+    "id": "b3-p41-10.15-161",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.15",
+    "caption": "Input to full adders using the multiplexers in Figure 10.14",
+    "page": 41,
+    "model": "adder"
+  },
+  {
+    "id": "b3-p42-10.16-162",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.16",
+    "caption": "Arithmetic Micro-operations implemented using Figure 10.15",
+    "page": 42,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p43-10.17-163",
+    "unit": 10,
+    "topicId": "10.6.2",
+    "topic": "A Simple ALU Design",
+    "figure": "10.17",
+    "caption": "Logic diagram of one stage of logic circuit",
+    "page": 43,
+    "model": "logic"
+  },
+  {
+    "id": "b3-p49-11.1-164",
+    "unit": 11,
+    "topicId": "11.2",
+    "topic": "The Control Unit",
+    "figure": "11.1",
+    "caption": "A General Model of Control Unit",
+    "page": 49,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p51-11.2-165",
+    "unit": 11,
+    "topicId": "11.3",
+    "topic": "The Hardwired Control",
+    "figure": "11.2",
+    "caption": "Block Diagram of Hardwired Control Unit",
+    "page": 51,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p52-11.3-166",
+    "unit": 11,
+    "topicId": "11.4",
+    "topic": "Wilkes Control",
+    "figure": "11.3",
+    "caption": "Wilkes Control Unit",
+    "page": 52,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p53-11.4-167",
+    "unit": 11,
+    "topicId": "11.5",
+    "topic": "The Micro-Programmed Control",
+    "figure": "11.4",
+    "caption": "Operation of Micro-Programmed Control Unit",
+    "page": 53,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p55-11.5-168",
+    "unit": 11,
+    "topicId": "11.6.2",
+    "topic": "Control Memory Organisation",
+    "figure": "11.5",
+    "caption": "An example of Control Memory Organisation",
+    "page": 55,
+    "model": "memory"
+  },
+  {
+    "id": "b3-p57-11.6-169",
+    "unit": 11,
+    "topicId": "11.6.3",
+    "topic": "Micro-Instruction Formats",
+    "figure": "11.6",
+    "caption": "Micro-instruction Formats",
+    "page": 57,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p59-11.7-170",
+    "unit": 11,
+    "topicId": "11.7.1",
+    "topic": "Micro-instruction Encoding",
+    "figure": "11.7",
+    "caption": "Decoding of Micro-instructions",
+    "page": 59,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p60-11.8-171",
+    "unit": 11,
+    "topicId": "11.7.2",
+    "topic": "Micro-instruction Sequencing",
+    "figure": "11.8",
+    "caption": "Mapping of opcode to micro-instruction address",
+    "page": 60,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p66-12.1-172",
+    "unit": 12,
+    "topicId": "12.2.2",
+    "topic": "Reasons for Increased Complexity",
+    "figure": "12.1",
+    "caption": "Sample machine instructions",
+    "page": 66,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p66-12.2-173",
+    "unit": 12,
+    "topicId": "12.2.2",
+    "topic": "Reasons for Increased Complexity",
+    "figure": "12.2",
+    "caption": "Execution of C=A+B on hypothetical machines",
+    "page": 66,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p67-12.3-174",
+    "unit": 12,
+    "topicId": "12.2.3",
+    "topic": "High Level Language Program Characteristics",
+    "figure": "12.3",
+    "caption": "Typical Program Characteristics",
+    "page": 67,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p71-12.4-175",
+    "unit": 12,
+    "topicId": "12.4",
+    "topic": "The Use of Large Register File",
+    "figure": "12.4",
+    "caption": "Use of three Overlapped Register Windows",
+    "page": 71,
+    "model": "state"
+  },
+  {
+    "id": "b3-p72-12.5-176",
+    "unit": 12,
+    "topicId": "12.4",
+    "topic": "The Use of Large Register File",
+    "figure": "12.5",
+    "caption": "Circular-Buffer Organization of Overlapped Windows",
+    "page": 72,
+    "model": "state"
+  },
+  {
+    "id": "b3-p75-12.6-177",
+    "unit": 12,
+    "topicId": "12.6",
+    "topic": "RISC Pipelining",
+    "figure": "12.6",
+    "caption": "RISC Pipelining",
+    "page": 75,
+    "model": "instruction"
+  },
+  {
+    "id": "b3-p76-12.7-178",
+    "unit": 12,
+    "topicId": "12.6",
+    "topic": "RISC Pipelining",
+    "figure": "12.7",
+    "caption": "Pipeline without data dependencies",
+    "page": 76,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p76-12.8-179",
+    "unit": 12,
+    "topicId": "12.6",
+    "topic": "RISC Pipelining",
+    "figure": "12.8",
+    "caption": "Pipeline with Brach Instruction",
+    "page": 76,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p76-12.9-180",
+    "unit": 12,
+    "topicId": "12.6",
+    "topic": "RISC Pipelining",
+    "figure": "12.9",
+    "caption": "Pipeline with reduced Brach penalty",
+    "page": 76,
+    "model": "pipeline"
+  },
+  {
+    "id": "b3-p77-12.10-181",
+    "unit": 12,
+    "topicId": "12.6",
+    "topic": "RISC Pipelining",
+    "figure": "12.10",
+    "caption": "Pipeline with optimised Brach penalty",
+    "page": 77,
+    "model": "pipeline"
+  },
+  {
+    "id": "b4-p6-13.1-182",
+    "unit": 13,
+    "topicId": "13.2.1",
+    "topic": "Bus Interface Unit",
+    "figure": "13.1",
+    "caption": "Structure of Intel 8086 Microprocessor",
+    "page": 6,
+    "model": "architecture"
+  },
+  {
+    "id": "b4-p7-13.2-183",
+    "unit": 13,
+    "topicId": "13.2.1",
+    "topic": "Bus Interface Unit",
+    "figure": "13.2",
+    "caption": "Memory Organisation of Intel 8086 microprocessor",
+    "page": 7,
+    "model": "memory"
+  },
+  {
+    "id": "b4-p11-13.3-184",
+    "unit": 13,
+    "topicId": "13.3.1",
+    "topic": "Data Transfer Instructions",
+    "figure": "13.3",
+    "caption": "Stack after one PUSH and one POP instructions.",
+    "page": 11,
+    "model": "instruction"
+  },
+  {
+    "id": "b4-p27-14.1-185",
+    "unit": 14,
+    "topicId": "14.3",
+    "topic": "Assembly Program Execution",
+    "figure": "14.1",
+    "caption": "Use of assembler",
+    "page": 27,
+    "model": "instruction"
+  },
+  {
+    "id": "b4-p28-14.2-186",
+    "unit": 14,
+    "topicId": "14.3",
+    "topic": "Assembly Program Execution",
+    "figure": "14.2",
+    "caption": "Program Assembly",
+    "page": 28,
+    "model": "instruction"
+  },
+  {
+    "id": "b4-p35-14.3-187",
+    "unit": 14,
+    "topicId": "14.5.1",
+    "topic": "Interrupts",
+    "figure": "14.3",
+    "caption": "Processing of an Interrupt",
+    "page": 35,
+    "model": "transfer"
+  },
+  {
+    "id": "b4-p77-16.1-188",
+    "unit": 16,
+    "topicId": "16.3.1",
+    "topic": "Arithmetic Pipeline",
+    "figure": "16.1",
+    "caption": "An arithmetic pipeline organization with intermediate registers for addition",
+    "page": 77,
+    "model": "adder"
+  },
+  {
+    "id": "b4-p78-16.2-189",
+    "unit": 16,
+    "topicId": "16.3.2",
+    "topic": "Instruction Pipeline",
+    "figure": "16.2",
+    "caption": "An Instruction pipeline demonstrating execution of five instructions",
+    "page": 78,
+    "model": "pipeline"
+  },
+  {
+    "id": "b4-p79-16.3-190",
+    "unit": 16,
+    "topicId": "16.3.2",
+    "topic": "Instruction Pipeline",
+    "figure": "16.3",
+    "caption": "An Instruction pipeline with conditional jump",
+    "page": 79,
+    "model": "pipeline"
+  },
+  {
+    "id": "b4-p83-16.4-191",
+    "unit": 16,
+    "topicId": "16.5",
+    "topic": "Multiprocessors",
+    "figure": "16.4",
+    "caption": "Multiprocessors with common shared memory",
+    "page": 83,
+    "model": "memory"
+  },
+  {
+    "id": "b4-p85-16.5-192",
+    "unit": 16,
+    "topicId": "16.5.2",
+    "topic": "Interconnection Structures",
+    "figure": "16.5",
+    "caption": "Multi-port memory Organization",
+    "page": 85,
+    "model": "memory"
+  },
+  {
+    "id": "b4-p85-16.6-193",
+    "unit": 16,
+    "topicId": "16.5.3",
+    "topic": "Inter-processor Arbitration",
+    "figure": "16.6",
+    "caption": "Serial Arbitration Procedure",
+    "page": 85,
+    "model": "architecture"
+  },
+  {
+    "id": "b4-p86-16.7-194",
+    "unit": 16,
+    "topicId": "16.6",
+    "topic": "Inter-Processor Communication and Synchronization",
+    "figure": "16.7",
+    "caption": "Message Passing",
+    "page": 86,
+    "model": "architecture"
+  },
+  {
+    "id": "b4-p86-16.8-195",
+    "unit": 16,
+    "topicId": "16.6",
+    "topic": "Inter-Processor Communication and Synchronization",
+    "figure": "16.8",
+    "caption": "Shared Memory",
+    "page": 86,
+    "model": "memory"
+  },
+  {
+    "id": "b4-p87-16.9-196",
+    "unit": 16,
+    "topicId": "16.7",
+    "topic": "Cache Coherence",
+    "figure": "16.9",
+    "caption": "Cache Coherence",
+    "page": 87,
+    "model": "memory"
+  },
+  {
+    "id": "b4-p88-16.10-197",
+    "unit": 16,
+    "topicId": "16.8",
+    "topic": "Multi-core Processors",
+    "figure": "16.10",
+    "caption": "Multi-core Processor block diagram",
+    "page": 88,
+    "model": "architecture"
+  }
+]
